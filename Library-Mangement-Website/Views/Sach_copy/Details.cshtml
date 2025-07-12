@@ -1,0 +1,74 @@
+﻿@model Library_Mangement_Website.Sach_copy
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sach_copy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NamXuatBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamXuatBan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pdf_link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pdf_link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_removed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_removed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhaXuatBan.Ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhaXuatBan.Ten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sach.TenSach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sach.TenSach)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.copy_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

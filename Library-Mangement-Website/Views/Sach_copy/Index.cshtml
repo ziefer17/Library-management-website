@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Library_Mangement_Website.Sach_copy>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NamXuatBan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pdf_link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.is_removed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhaXuatBan.Ten)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sach.TenSach)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NamXuatBan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoLuong)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pdf_link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.is_removed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhaXuatBan.Ten)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sach.TenSach)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.copy_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.copy_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.copy_id })
+        </td>
+    </tr>
+}
+
+</table>

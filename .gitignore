@@ -1,0 +1,27 @@
+# .NET Framework and Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.sln.docstates
+*.cache
+*.csproj.user
+*.pdb
+*.dll
+*.exe
+
+# NuGet Packages
+packages/
+*.nupkg
+
+# ASP.NET specific
+App_Data/
+*.mdf
+*.ldf
+
+# User-specific files
+*.rsuser
+*.scc
+*.vspscc
+*.vssscc

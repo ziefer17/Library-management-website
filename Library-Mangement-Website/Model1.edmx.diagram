@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d963af5f760c4e8da8c7ca1b79e1b202" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="libraryModel.NhaXuatBan" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.Phat" Width="1.5" PointX="9.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.PhieuMuon" Width="1.5" PointX="7.5" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.PhieuThuTien" Width="1.5" PointX="12" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.Sach" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.Sach_copy" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.TacGia" Width="1.5" PointX="3.125" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.TheDocGia" Width="1.5" PointX="8.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="libraryModel.TheLoai" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="libraryModel.FK__Sach_copy__nxb_i__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__Phat__docgia_id__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__Phat__pm_id__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__PhieuThuT__phat___534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__PhieuMuon__copy___48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__PhieuMuon__docgi__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__Sach__theloai_id__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.FK__Sach_copy__sach___440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="libraryModel.Sach_TacGia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

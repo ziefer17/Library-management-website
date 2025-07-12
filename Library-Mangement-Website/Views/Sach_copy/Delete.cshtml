@@ -1,0 +1,80 @@
+﻿@model Library_Mangement_Website.Sach_copy
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Sach_copy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NamXuatBan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamXuatBan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoLuong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pdf_link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pdf_link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_removed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_removed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.image)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhaXuatBan.Ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhaXuatBan.Ten)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sach.TenSach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sach.TenSach)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

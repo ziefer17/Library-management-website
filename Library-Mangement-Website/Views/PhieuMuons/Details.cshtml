@@ -1,0 +1,50 @@
+﻿@model Library_Mangement_Website.PhieuMuon
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PhieuMuon</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayMuon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayMuon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sach_copy.pdf_link)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sach_copy.pdf_link)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TheDocGia.Ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TheDocGia.Ten)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.pm_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

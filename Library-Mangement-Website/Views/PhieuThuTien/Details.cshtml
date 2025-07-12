@@ -1,0 +1,42 @@
+﻿@model Library_Mangement_Website.PhieuThuTien
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PhieuThuTien</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NgayTra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgayTra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoTien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoTien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phat.phat_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phat.phat_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.thutien_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

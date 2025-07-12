@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="libraryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="NhaXuatBan">
+          <Key>
+            <PropertyRef Name="nxb_id" />
+          </Key>
+          <Property Name="nxb_id" Type="int" Nullable="false" />
+          <Property Name="Ten" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Phat">
+          <Key>
+            <PropertyRef Name="phat_id" />
+          </Key>
+          <Property Name="phat_id" Type="int" Nullable="false" />
+          <Property Name="SoNgayTre" Type="int" />
+          <Property Name="SoTienPhat" Type="money" />
+          <Property Name="docgia_id" Type="int" Nullable="false" />
+          <Property Name="pm_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhieuMuon">
+          <Key>
+            <PropertyRef Name="pm_id" />
+          </Key>
+          <Property Name="pm_id" Type="int" Nullable="false" />
+          <Property Name="NgayMuon" Type="datetime" />
+          <Property Name="NgayTra" Type="datetime" />
+          <Property Name="docgia_id" Type="int" Nullable="false" />
+          <Property Name="copy_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhieuThuTien">
+          <Key>
+            <PropertyRef Name="thutien_id" />
+          </Key>
+          <Property Name="thutien_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NgayTra" Type="datetime" />
+          <Property Name="SoTien" Type="money" />
+          <Property Name="phat_id" Type="int" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="sach_id" />
+          </Key>
+          <Property Name="sach_id" Type="int" Nullable="false" />
+          <Property Name="TenSach" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="ThongTin" Type="varchar" MaxLength="500" />
+          <Property Name="theloai_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sach_copy">
+          <Key>
+            <PropertyRef Name="copy_id" />
+          </Key>
+          <Property Name="copy_id" Type="int" Nullable="false" />
+          <Property Name="NamXuatBan" Type="date" />
+          <Property Name="SoLuong" Type="int" />
+          <Property Name="pdf_link" Type="varchar" MaxLength="500" />
+          <Property Name="is_removed" Type="bit" />
+          <Property Name="sach_id" Type="int" />
+          <Property Name="nxb_id" Type="int" />
+          <Property Name="image" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Sach_TacGia">
+          <Key>
+            <PropertyRef Name="tacgia_id" />
+            <PropertyRef Name="sach_id" />
+          </Key>
+          <Property Name="tacgia_id" Type="int" Nullable="false" />
+          <Property Name="sach_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TacGia">
+          <Key>
+            <PropertyRef Name="tacgia_id" />
+          </Key>
+          <Property Name="tacgia_id" Type="int" Nullable="false" />
+          <Property Name="Ten" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TheDocGia">
+          <Key>
+            <PropertyRef Name="docgia_id" />
+          </Key>
+          <Property Name="docgia_id" Type="int" Nullable="false" />
+          <Property Name="Ten" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="NgayLapThe" Type="datetime" Nullable="false" />
+          <Property Name="NgaySinh" Type="date" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="30" />
+          <Property Name="Password" Type="nvarchar" MaxLength="30" />
+          <Property Name="LoaiDG" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="theloai_id" />
+          </Key>
+          <Property Name="theloai_id" Type="int" Nullable="false" />
+          <Property Name="Ten" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Phat__docgia_id__4BAC3F29">
+          <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="1" />
+          <End Role="Phat" Type="Self.Phat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheDocGia">
+              <PropertyRef Name="docgia_id" />
+            </Principal>
+            <Dependent Role="Phat">
+              <PropertyRef Name="docgia_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Phat__pm_id__4CA06362">
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="1" />
+          <End Role="Phat" Type="Self.Phat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhieuMuon">
+              <PropertyRef Name="pm_id" />
+            </Principal>
+            <Dependent Role="Phat">
+              <PropertyRef Name="pm_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PhieuMuon__copy___48CFD27E">
+          <End Role="Sach_copy" Type="Self.Sach_copy" Multiplicity="1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach_copy">
+              <PropertyRef Name="copy_id" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="copy_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PhieuMuon__docgi__47DBAE45">
+          <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheDocGia">
+              <PropertyRef Name="docgia_id" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="docgia_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PhieuThuT__phat___534D60F1">
+          <End Role="Phat" Type="Self.Phat" Multiplicity="0..1" />
+          <End Role="PhieuThuTien" Type="Self.PhieuThuTien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phat">
+              <PropertyRef Name="phat_id" />
+            </Principal>
+            <Dependent Role="PhieuThuTien">
+              <PropertyRef Name="phat_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach__theloai_id__403A8C7D">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="theloai_id" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="theloai_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach_copy__nxb_i__44FF419A">
+          <End Role="NhaXuatBan" Type="Self.NhaXuatBan" Multiplicity="0..1" />
+          <End Role="Sach_copy" Type="Self.Sach_copy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NhaXuatBan">
+              <PropertyRef Name="nxb_id" />
+            </Principal>
+            <Dependent Role="Sach_copy">
+              <PropertyRef Name="nxb_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach_copy__sach___440B1D61">
+          <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+          <End Role="Sach_copy" Type="Self.Sach_copy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach">
+              <PropertyRef Name="sach_id" />
+            </Principal>
+            <Dependent Role="Sach_copy">
+              <PropertyRef Name="sach_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach_TacG__sach___5070F446">
+          <End Role="Sach" Type="Self.Sach" Multiplicity="1" />
+          <End Role="Sach_TacGia" Type="Self.Sach_TacGia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach">
+              <PropertyRef Name="sach_id" />
+            </Principal>
+            <Dependent Role="Sach_TacGia">
+              <PropertyRef Name="sach_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach_TacG__tacgi__4F7CD00D">
+          <End Role="TacGia" Type="Self.TacGia" Multiplicity="1" />
+          <End Role="Sach_TacGia" Type="Self.Sach_TacGia" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacGia">
+              <PropertyRef Name="tacgia_id" />
+            </Principal>
+            <Dependent Role="Sach_TacGia">
+              <PropertyRef Name="tacgia_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="libraryModelStoreContainer">
+          <EntitySet Name="NhaXuatBan" EntityType="Self.NhaXuatBan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Phat" EntityType="Self.Phat" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PhieuMuon" EntityType="Self.PhieuMuon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PhieuThuTien" EntityType="Self.PhieuThuTien" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sach" EntityType="Self.Sach" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sach_copy" EntityType="Self.Sach_copy" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sach_TacGia" EntityType="Self.Sach_TacGia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TacGia" EntityType="Self.TacGia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TheDocGia" EntityType="Self.TheDocGia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Phat__docgia_id__4BAC3F29" Association="Self.FK__Phat__docgia_id__4BAC3F29">
+            <End Role="TheDocGia" EntitySet="TheDocGia" />
+            <End Role="Phat" EntitySet="Phat" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Phat__pm_id__4CA06362" Association="Self.FK__Phat__pm_id__4CA06362">
+            <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+            <End Role="Phat" EntitySet="Phat" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PhieuMuon__copy___48CFD27E" Association="Self.FK__PhieuMuon__copy___48CFD27E">
+            <End Role="Sach_copy" EntitySet="Sach_copy" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PhieuMuon__docgi__47DBAE45" Association="Self.FK__PhieuMuon__docgi__47DBAE45">
+            <End Role="TheDocGia" EntitySet="TheDocGia" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PhieuThuT__phat___534D60F1" Association="Self.FK__PhieuThuT__phat___534D60F1">
+            <End Role="Phat" EntitySet="Phat" />
+            <End Role="PhieuThuTien" EntitySet="PhieuThuTien" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach__theloai_id__403A8C7D" Association="Self.FK__Sach__theloai_id__403A8C7D">
+            <End Role="TheLoai" EntitySet="TheLoai" />
+            <End Role="Sach" EntitySet="Sach" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach_copy__nxb_i__44FF419A" Association="Self.FK__Sach_copy__nxb_i__44FF419A">
+            <End Role="NhaXuatBan" EntitySet="NhaXuatBan" />
+            <End Role="Sach_copy" EntitySet="Sach_copy" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach_copy__sach___440B1D61" Association="Self.FK__Sach_copy__sach___440B1D61">
+            <End Role="Sach" EntitySet="Sach" />
+            <End Role="Sach_copy" EntitySet="Sach_copy" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach_TacG__sach___5070F446" Association="Self.FK__Sach_TacG__sach___5070F446">
+            <End Role="Sach" EntitySet="Sach" />
+            <End Role="Sach_TacGia" EntitySet="Sach_TacGia" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach_TacG__tacgi__4F7CD00D" Association="Self.FK__Sach_TacG__tacgi__4F7CD00D">
+            <End Role="TacGia" EntitySet="TacGia" />
+            <End Role="Sach_TacGia" EntitySet="Sach_TacGia" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="libraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="NhaXuatBan">
+          <Key>
+            <PropertyRef Name="nxb_id" />
+          </Key>
+          <Property Name="nxb_id" Type="Int32" Nullable="false" />
+          <Property Name="Ten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Sach_copy" Relationship="Self.FK__Sach_copy__nxb_i__44FF419A" FromRole="NhaXuatBan" ToRole="Sach_copy" />
+        </EntityType>
+        <EntityType Name="Phat">
+          <Key>
+            <PropertyRef Name="phat_id" />
+          </Key>
+          <Property Name="phat_id" Type="Int32" Nullable="false" />
+          <Property Name="SoNgayTre" Type="Int32" />
+          <Property Name="SoTienPhat" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="docgia_id" Type="Int32" Nullable="false" />
+          <Property Name="pm_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TheDocGia" Relationship="Self.FK__Phat__docgia_id__4BAC3F29" FromRole="Phat" ToRole="TheDocGia" />
+          <NavigationProperty Name="PhieuMuon" Relationship="Self.FK__Phat__pm_id__4CA06362" FromRole="Phat" ToRole="PhieuMuon" />
+          <NavigationProperty Name="PhieuThuTiens" Relationship="Self.FK__PhieuThuT__phat___534D60F1" FromRole="Phat" ToRole="PhieuThuTien" />
+        </EntityType>
+        <EntityType Name="PhieuMuon">
+          <Key>
+            <PropertyRef Name="pm_id" />
+          </Key>
+          <Property Name="pm_id" Type="Int32" Nullable="false" />
+          <Property Name="NgayMuon" Type="DateTime" Precision="3" />
+          <Property Name="NgayTra" Type="DateTime" Precision="3" />
+          <Property Name="docgia_id" Type="Int32" Nullable="false" />
+          <Property Name="copy_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Phats" Relationship="Self.FK__Phat__pm_id__4CA06362" FromRole="PhieuMuon" ToRole="Phat" />
+          <NavigationProperty Name="Sach_copy" Relationship="Self.FK__PhieuMuon__copy___48CFD27E" FromRole="PhieuMuon" ToRole="Sach_copy" />
+          <NavigationProperty Name="TheDocGia" Relationship="Self.FK__PhieuMuon__docgi__47DBAE45" FromRole="PhieuMuon" ToRole="TheDocGia" />
+        </EntityType>
+        <EntityType Name="PhieuThuTien">
+          <Key>
+            <PropertyRef Name="thutien_id" />
+          </Key>
+          <Property Name="thutien_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NgayTra" Type="DateTime" Precision="3" />
+          <Property Name="SoTien" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="phat_id" Type="Int32" />
+          <NavigationProperty Name="Phat" Relationship="Self.FK__PhieuThuT__phat___534D60F1" FromRole="PhieuThuTien" ToRole="Phat" />
+        </EntityType>
+        <EntityType Name="Sach">
+          <Key>
+            <PropertyRef Name="sach_id" />
+          </Key>
+          <Property Name="sach_id" Type="Int32" Nullable="false" />
+          <Property Name="TenSach" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ThongTin" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="theloai_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TheLoai" Relationship="Self.FK__Sach__theloai_id__403A8C7D" FromRole="Sach" ToRole="TheLoai" />
+          <NavigationProperty Name="Sach_copy" Relationship="Self.FK__Sach_copy__sach___440B1D61" FromRole="Sach" ToRole="Sach_copy" />
+          <NavigationProperty Name="TacGias" Relationship="Self.Sach_TacGia" FromRole="Sach" ToRole="TacGia" />
+        </EntityType>
+        <EntityType Name="Sach_copy">
+          <Key>
+            <PropertyRef Name="copy_id" />
+          </Key>
+          <Property Name="copy_id" Type="Int32" Nullable="false" />
+          <Property Name="NamXuatBan" Type="DateTime" Precision="0" />
+          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="pdf_link" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="is_removed" Type="Boolean" />
+          <Property Name="sach_id" Type="Int32" />
+          <Property Name="nxb_id" Type="Int32" />
+          <Property Name="image" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="NhaXuatBan" Relationship="Self.FK__Sach_copy__nxb_i__44FF419A" FromRole="Sach_copy" ToRole="NhaXuatBan" />
+          <NavigationProperty Name="PhieuMuons" Relationship="Self.FK__PhieuMuon__copy___48CFD27E" FromRole="Sach_copy" ToRole="PhieuMuon" />
+          <NavigationProperty Name="Sach" Relationship="Self.FK__Sach_copy__sach___440B1D61" FromRole="Sach_copy" ToRole="Sach" />
+        </EntityType>
+        <EntityType Name="TacGia">
+          <Key>
+            <PropertyRef Name="tacgia_id" />
+          </Key>
+          <Property Name="tacgia_id" Type="Int32" Nullable="false" />
+          <Property Name="Ten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Saches" Relationship="Self.Sach_TacGia" FromRole="TacGia" ToRole="Sach" />
+        </EntityType>
+        <EntityType Name="TheDocGia">
+          <Key>
+            <PropertyRef Name="docgia_id" />
+          </Key>
+          <Property Name="docgia_id" Type="Int32" Nullable="false" />
+          <Property Name="Ten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NgayLapThe" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NgaySinh" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="LoaiDG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Phats" Relationship="Self.FK__Phat__docgia_id__4BAC3F29" FromRole="TheDocGia" ToRole="Phat" />
+          <NavigationProperty Name="PhieuMuons" Relationship="Self.FK__PhieuMuon__docgi__47DBAE45" FromRole="TheDocGia" ToRole="PhieuMuon" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="theloai_id" />
+          </Key>
+          <Property Name="theloai_id" Type="Int32" Nullable="false" />
+          <Property Name="Ten" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Saches" Relationship="Self.FK__Sach__theloai_id__403A8C7D" FromRole="TheLoai" ToRole="Sach" />
+        </EntityType>
+        <Association Name="FK__Sach_copy__nxb_i__44FF419A">
+          <End Role="NhaXuatBan" Type="Self.NhaXuatBan" Multiplicity="0..1" />
+          <End Role="Sach_copy" Type="Self.Sach_copy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NhaXuatBan">
+              <PropertyRef Name="nxb_id" />
+            </Principal>
+            <Dependent Role="Sach_copy">
+              <PropertyRef Name="nxb_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Phat__docgia_id__4BAC3F29">
+          <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="1" />
+          <End Role="Phat" Type="Self.Phat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheDocGia">
+              <PropertyRef Name="docgia_id" />
+            </Principal>
+            <Dependent Role="Phat">
+              <PropertyRef Name="docgia_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Phat__pm_id__4CA06362">
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="1" />
+          <End Role="Phat" Type="Self.Phat" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhieuMuon">
+              <PropertyRef Name="pm_id" />
+            </Principal>
+            <Dependent Role="Phat">
+              <PropertyRef Name="pm_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PhieuThuT__phat___534D60F1">
+          <End Role="Phat" Type="Self.Phat" Multiplicity="0..1" />
+          <End Role="PhieuThuTien" Type="Self.PhieuThuTien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phat">
+              <PropertyRef Name="phat_id" />
+            </Principal>
+            <Dependent Role="PhieuThuTien">
+              <PropertyRef Name="phat_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PhieuMuon__copy___48CFD27E">
+          <End Role="Sach_copy" Type="Self.Sach_copy" Multiplicity="1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach_copy">
+              <PropertyRef Name="copy_id" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="copy_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__PhieuMuon__docgi__47DBAE45">
+          <End Role="TheDocGia" Type="Self.TheDocGia" Multiplicity="1" />
+          <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheDocGia">
+              <PropertyRef Name="docgia_id" />
+            </Principal>
+            <Dependent Role="PhieuMuon">
+              <PropertyRef Name="docgia_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach__theloai_id__403A8C7D">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="theloai_id" />
+            </Principal>
+            <Dependent Role="Sach">
+              <PropertyRef Name="theloai_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Sach_copy__sach___440B1D61">
+          <End Role="Sach" Type="Self.Sach" Multiplicity="0..1" />
+          <End Role="Sach_copy" Type="Self.Sach_copy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sach">
+              <PropertyRef Name="sach_id" />
+            </Principal>
+            <Dependent Role="Sach_copy">
+              <PropertyRef Name="sach_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Sach_TacGia">
+          <End Role="Sach" Type="Self.Sach" Multiplicity="*" />
+          <End Role="TacGia" Type="Self.TacGia" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="libraryEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NhaXuatBans" EntityType="Self.NhaXuatBan" />
+          <EntitySet Name="Phats" EntityType="Self.Phat" />
+          <EntitySet Name="PhieuMuons" EntityType="Self.PhieuMuon" />
+          <EntitySet Name="PhieuThuTiens" EntityType="Self.PhieuThuTien" />
+          <EntitySet Name="Saches" EntityType="Self.Sach" />
+          <EntitySet Name="Sach_copy" EntityType="Self.Sach_copy" />
+          <EntitySet Name="TacGias" EntityType="Self.TacGia" />
+          <EntitySet Name="TheDocGias" EntityType="Self.TheDocGia" />
+          <EntitySet Name="TheLoais" EntityType="Self.TheLoai" />
+          <AssociationSet Name="FK__Sach_copy__nxb_i__44FF419A" Association="Self.FK__Sach_copy__nxb_i__44FF419A">
+            <End Role="NhaXuatBan" EntitySet="NhaXuatBans" />
+            <End Role="Sach_copy" EntitySet="Sach_copy" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Phat__docgia_id__4BAC3F29" Association="Self.FK__Phat__docgia_id__4BAC3F29">
+            <End Role="TheDocGia" EntitySet="TheDocGias" />
+            <End Role="Phat" EntitySet="Phats" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Phat__pm_id__4CA06362" Association="Self.FK__Phat__pm_id__4CA06362">
+            <End Role="PhieuMuon" EntitySet="PhieuMuons" />
+            <End Role="Phat" EntitySet="Phats" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PhieuThuT__phat___534D60F1" Association="Self.FK__PhieuThuT__phat___534D60F1">
+            <End Role="Phat" EntitySet="Phats" />
+            <End Role="PhieuThuTien" EntitySet="PhieuThuTiens" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PhieuMuon__copy___48CFD27E" Association="Self.FK__PhieuMuon__copy___48CFD27E">
+            <End Role="Sach_copy" EntitySet="Sach_copy" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuons" />
+          </AssociationSet>
+          <AssociationSet Name="FK__PhieuMuon__docgi__47DBAE45" Association="Self.FK__PhieuMuon__docgi__47DBAE45">
+            <End Role="TheDocGia" EntitySet="TheDocGias" />
+            <End Role="PhieuMuon" EntitySet="PhieuMuons" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach__theloai_id__403A8C7D" Association="Self.FK__Sach__theloai_id__403A8C7D">
+            <End Role="TheLoai" EntitySet="TheLoais" />
+            <End Role="Sach" EntitySet="Saches" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Sach_copy__sach___440B1D61" Association="Self.FK__Sach_copy__sach___440B1D61">
+            <End Role="Sach" EntitySet="Saches" />
+            <End Role="Sach_copy" EntitySet="Sach_copy" />
+          </AssociationSet>
+          <AssociationSet Name="Sach_TacGia" Association="Self.Sach_TacGia">
+            <End Role="Sach" EntitySet="Saches" />
+            <End Role="TacGia" EntitySet="TacGias" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="libraryModelStoreContainer" CdmEntityContainer="libraryEntities">
+          <EntitySetMapping Name="NhaXuatBans">
+            <EntityTypeMapping TypeName="libraryModel.NhaXuatBan">
+              <MappingFragment StoreEntitySet="NhaXuatBan">
+                <ScalarProperty Name="nxb_id" ColumnName="nxb_id" />
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Phats">
+            <EntityTypeMapping TypeName="libraryModel.Phat">
+              <MappingFragment StoreEntitySet="Phat">
+                <ScalarProperty Name="phat_id" ColumnName="phat_id" />
+                <ScalarProperty Name="SoNgayTre" ColumnName="SoNgayTre" />
+                <ScalarProperty Name="SoTienPhat" ColumnName="SoTienPhat" />
+                <ScalarProperty Name="docgia_id" ColumnName="docgia_id" />
+                <ScalarProperty Name="pm_id" ColumnName="pm_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhieuMuons">
+            <EntityTypeMapping TypeName="libraryModel.PhieuMuon">
+              <MappingFragment StoreEntitySet="PhieuMuon">
+                <ScalarProperty Name="pm_id" ColumnName="pm_id" />
+                <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
+                <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
+                <ScalarProperty Name="docgia_id" ColumnName="docgia_id" />
+                <ScalarProperty Name="copy_id" ColumnName="copy_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhieuThuTiens">
+            <EntityTypeMapping TypeName="libraryModel.PhieuThuTien">
+              <MappingFragment StoreEntitySet="PhieuThuTien">
+                <ScalarProperty Name="thutien_id" ColumnName="thutien_id" />
+                <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
+                <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+                <ScalarProperty Name="phat_id" ColumnName="phat_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Saches">
+            <EntityTypeMapping TypeName="libraryModel.Sach">
+              <MappingFragment StoreEntitySet="Sach">
+                <ScalarProperty Name="sach_id" ColumnName="sach_id" />
+                <ScalarProperty Name="TenSach" ColumnName="TenSach" />
+                <ScalarProperty Name="ThongTin" ColumnName="ThongTin" />
+                <ScalarProperty Name="theloai_id" ColumnName="theloai_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sach_copy">
+            <EntityTypeMapping TypeName="libraryModel.Sach_copy">
+              <MappingFragment StoreEntitySet="Sach_copy">
+                <ScalarProperty Name="copy_id" ColumnName="copy_id" />
+                <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="pdf_link" ColumnName="pdf_link" />
+                <ScalarProperty Name="is_removed" ColumnName="is_removed" />
+                <ScalarProperty Name="sach_id" ColumnName="sach_id" />
+                <ScalarProperty Name="nxb_id" ColumnName="nxb_id" />
+                <ScalarProperty Name="image" ColumnName="image" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TacGias">
+            <EntityTypeMapping TypeName="libraryModel.TacGia">
+              <MappingFragment StoreEntitySet="TacGia">
+                <ScalarProperty Name="tacgia_id" ColumnName="tacgia_id" />
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheDocGias">
+            <EntityTypeMapping TypeName="libraryModel.TheDocGia">
+              <MappingFragment StoreEntitySet="TheDocGia">
+                <ScalarProperty Name="docgia_id" ColumnName="docgia_id" />
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+                <ScalarProperty Name="NgayLapThe" ColumnName="NgayLapThe" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="LoaiDG" ColumnName="LoaiDG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheLoais">
+            <EntityTypeMapping TypeName="libraryModel.TheLoai">
+              <MappingFragment StoreEntitySet="TheLoai">
+                <ScalarProperty Name="theloai_id" ColumnName="theloai_id" />
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Sach_TacGia" TypeName="libraryModel.Sach_TacGia" StoreEntitySet="Sach_TacGia">
+            <EndProperty Name="Sach">
+              <ScalarProperty Name="sach_id" ColumnName="sach_id" />
+            </EndProperty>
+            <EndProperty Name="TacGia">
+              <ScalarProperty Name="tacgia_id" ColumnName="tacgia_id" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

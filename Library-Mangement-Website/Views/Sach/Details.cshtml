@@ -1,0 +1,42 @@
+﻿@model Library_Mangement_Website.Sach
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sach</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSach)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSach)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThongTin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThongTin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TheLoai.Ten)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TheLoai.Ten)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.sach_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
