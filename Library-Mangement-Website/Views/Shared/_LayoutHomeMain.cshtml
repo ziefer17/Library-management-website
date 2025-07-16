@@ -88,8 +88,6 @@
 
                 <!-- Stats Cards -->
                 <div class="stats-grid">
-                    <!-- Bạn có thể giữ nguyên như cũ -->
-                    <!-- ... -->
                 </div>
 
                 <!-- Content Grid -->
@@ -104,6 +102,9 @@
             </div>
         </main>
     </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
 

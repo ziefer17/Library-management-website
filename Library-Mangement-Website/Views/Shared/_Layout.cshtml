@@ -8,6 +8,23 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <header>
+        @*@if (Session["User"] != null)
+        {
+            <span>Xin chào, @((Session["User"] as TheDocGia).Ten)!</span>
+            <a href="/Account/Logout">Đăng xuất</a>
+
+            @if (Session["Role"].ToString() == "Admin")
+            {
+                <a href="/Admin/Dashboard">Trang Quản Trị</a>
+            }
+        }
+        else
+        {
+            <a href="/Account/Login">Đăng nhập</a>
+            <a href="/Account/Register">Đăng ký</a>
+        }*@
+    </header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
             @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
