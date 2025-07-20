@@ -1,48 +1,58 @@
 ﻿@model Library_Mangement_Website.Sach
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Xóa sách";
 }
 
-<h2>Delete</h2>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <div id="books" class="page active">
+            <div class="page-header">
+                <div class="header-info">
+                    <h2>Xóa sách</h2>
+                    <p>Xác nhận xóa sách khỏi thư viện</p>
+                </div>
+            </div>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Sach</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenSach)
-        </dt>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Xác nhận xóa</h3>
+                </div>
+                <div class="card-content">
+                    <h4>Thông tin sách</h4>
+                    <hr />
+                    <dl class="details-list">
+                        <dt>@Html.DisplayNameFor(model => model.TenSach)</dt>
+                        <dd>@Html.DisplayFor(model => model.TenSach)</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenSach)
-        </dd>
+                        <dt>@Html.DisplayNameFor(model => model.ThongTin)</dt>
+                        <dd>@Html.DisplayFor(model => model.ThongTin)</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ThongTin)
-        </dt>
+                        <dt>@Html.DisplayNameFor(model => model.TheLoai.Ten)</dt>
+                        <dd>@Html.DisplayFor(model => model.TheLoai.Ten)</dd>
+                    </dl>
 
-        <dd>
-            @Html.DisplayFor(model => model.ThongTin)
-        </dd>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TheLoai.Ten)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TheLoai.Ten)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
+                        <div class="form-group">
+                            <div class="col-md-10">
+                                <input type="submit" value="Xóa" class="btn btn-danger" /> |
+                                <a href="@Url.Action("Index")" class="btn btn-outline">Quay lại danh sách</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
-    }
-</div>
+</body>
+</html>

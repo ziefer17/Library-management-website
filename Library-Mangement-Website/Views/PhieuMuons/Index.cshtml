@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
 }
 
 <h2>Index</h2>
@@ -41,9 +42,9 @@
             @Html.DisplayFor(modelItem => item.TheDocGia.Ten)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.pm_id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.pm_id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.pm_id })
+            @Html.ActionLink("Edit", "Edit", new { id = item.pm_id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.pm_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.pm_id })
         </td>
     </tr>
 }

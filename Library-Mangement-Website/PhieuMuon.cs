@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class PhieuMuon
     {
         public PhieuMuon()
@@ -20,7 +21,11 @@ namespace Library_Mangement_Website
         }
     
         public int pm_id { get; set; }
+
+        [Display(Name = "Date borrowed")]
         public Nullable<System.DateTime> NgayMuon { get; set; }
+
+        [Display(Name = "Date returned")]
         public Nullable<System.DateTime> NgayTra { get; set; }
         public int docgia_id { get; set; }
         public int copy_id { get; set; }

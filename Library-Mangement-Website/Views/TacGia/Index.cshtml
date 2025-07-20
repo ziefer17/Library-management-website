@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Library_Mangement_Website.TacGia>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ten)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ten)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.tacgia_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.tacgia_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.tacgia_id })
+        </td>
+    </tr>
+}
+
+</table>

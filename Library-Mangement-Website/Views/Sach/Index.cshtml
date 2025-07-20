@@ -1,46 +1,164 @@
-﻿@model IEnumerable<Library_Mangement_Website.Sach>
+﻿@model IEnumerable<Library_Mangement_Website.Models.SachViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Quản lý thông tin sách trong thư viện";
     Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
 }
 
-<h2>Index</h2>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+        <div id="books">
+            <div>
+                <div>
+                    <h2>Quản lý sách</h2>
+                    <p>Quản lý thông tin sách trong thư viện</p>
+                </div>
+                <a href="@Url.Action("Create")" class="btn btn-primary" style="padding: 5px; margin: 5px">
+                    <i class="fas fa-plus"></i> Thêm sách mới
+                </a>
+            </div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TenSach)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ThongTin)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TheLoai.Ten)
-        </th>
-        <th></th>
-    </tr>
+            <!-- Filters -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="filters">
+                        @using (Html.BeginForm("Index", "Sach", FormMethod.Get))
+                        {
+                            <div class="search-filter">
+                                
+                                <input type="text" placeholder="Tìm tên sách:" id="searchTerm" value="@ViewBag.SearchTerm">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                                <a href="@Url.Action("ExportToExcel", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 5px">Export to Excel</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenSach)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ThongTin)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TheLoai.Ten)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.sach_id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.sach_id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.sach_id })
-        </td>
-    </tr>
-}
+            <!-- Books Table -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Danh sách sách</h3>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table class="data-table" id="booksTable">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Book name
+                                    </th>
+                                    <th>
+                                        Genre
+                                    </th>
+                                    <th>
+                                        Authors
+                                    </th>
+                                    <th>
+                                        Total Copies
+                                    </th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td class="font-medium">@Html.DisplayFor(modelItem => item.TenSach)</td>
 
-</table>
+                                        <td><span class="badge badge-outline">@Html.DisplayFor(modelItem => item.TheLoaiTen)</span></td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Authors)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.TotalCopies)
+                                        </td>
+                                        <td>
+                                            <div class="action-buttons">
+                                                <a href="@Url.Action("Edit", new { id = item.SachId })" class="btn-icon" title="Xem"><i class="fas fa-eye"></i></a>
+                                                <a href="@Url.Action("Details", new { id = item.SachId })" class="btn-icon" title="Sửa"><i class="fas fa-edit"></i></a>
+                                                <a href="@Url.Action("Delete", new { id = item.SachId })" class="btn-icon" title="Xóa"><i class="fas fa-trash"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="~/Scripts/script.js"></script>
+</body>
+</html>
+
+
+<!-- Search -->
+@*@using (Html.BeginForm("Index", "Sach", FormMethod.Get))
+    {
+        <div class="form-group">
+            <label for="searchTerm">Tìm tên sách:</label>
+            <input type="text" name="searchTerm" id="searchTerm" value="@ViewBag.SearchTerm" class="form-control" style="display:inline-block; width:300px;" />
+            <button type="submit" class="btn btn-primary">Search</button>
+            <a href="@Url.Action("ExportToExcel", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-success">Export to Excel</a>
+        </div>
+    }*@
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TenSach)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TheLoaiTen)
+            </th>
+            <th>
+                Authors
+            </th>
+            <th>
+                Total Copies
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenSach)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ThongTin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TheLoaiTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Authors)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalCopies)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.SachId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.SachId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.SachId })
+                </td>
+            </tr>
+        }
+
+    </table>*@

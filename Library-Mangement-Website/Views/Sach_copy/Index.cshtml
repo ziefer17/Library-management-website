@@ -1,69 +1,82 @@
 ﻿@model IEnumerable<Library_Mangement_Website.Sach_copy>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Danh sách bản sao sách";
+    var currentDateTime = DateTime.Now; // Lấy thời gian hiện tại (06:05 PM +07, Sunday, July 20, 2025)
 }
 
-<h2>Index</h2>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <div id="books" class="page active">
+            <div class="page-header">
+                <div class="header-info">
+                    <h2>Danh sách bản sao sách</h2>
+                    <p>Quản lý các bản sao sách trong thư viện</p>
+                    <small>Cập nhật lần cuối: @currentDateTime.ToString("hh:mm tt dd/MM/yyyy") (GMT+7)</small>
+                </div>
+                <div class="filters">
+                    <div class="search-filter">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Tìm kiếm..." class="form-control">
+                    </div>
+                </div>
+            </div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.NamXuatBan)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SoLuong)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.pdf_link)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.is_removed)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.image)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NhaXuatBan.Ten)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sach.TenSach)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NamXuatBan)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SoLuong)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.pdf_link)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.is_removed)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.image)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NhaXuatBan.Ten)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sach.TenSach)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.copy_id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.copy_id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.copy_id })
-        </td>
-    </tr>
-}
-
-</table>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Danh sách bản sao</h3>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.NamXuatBan)</th>
+                                    <th>@Html.DisplayNameFor(model => model.SoLuong)</th>
+                                    <th>@Html.DisplayNameFor(model => model.pdf_link)</th>
+                                    <th>@Html.DisplayNameFor(model => model.is_removed)</th>
+                                    <th>@Html.DisplayNameFor(model => model.image)</th>
+                                    <th>@Html.DisplayNameFor(model => model.NhaXuatBan.Ten)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Sach.TenSach)</th>
+                                    <th>Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.NamXuatBan)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.SoLuong)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.pdf_link)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.is_removed)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.image)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.NhaXuatBan.Ten)</td>
+                                        <td>@Html.DisplayFor(modelItem => item.Sach.TenSach)</td>
+                                        <td>
+                                            @Html.ActionLink("Sửa", "Edit", new { id = item.copy_id }, new { @class = "btn btn-primary btn-icon" }) |
+                                            @Html.ActionLink("Chi tiết", "Details", new { id = item.copy_id }, new { @class = "btn btn-outline btn-icon" }) |
+                                            @Html.ActionLink("Xóa", "Delete", new { id = item.copy_id }, new { @class = "btn btn-danger btn-icon" })
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn-success" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

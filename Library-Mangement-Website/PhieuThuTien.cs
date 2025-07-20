@@ -11,11 +11,16 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class PhieuThuTien
     {
         public int thutien_id { get; set; }
+
+        [Display(Name = "Date returned")]
         public Nullable<System.DateTime> NgayTra { get; set; }
+
+        [Display(Name = "Money payed")]
         public Nullable<decimal> SoTien { get; set; }
         public Nullable<int> phat_id { get; set; }
     

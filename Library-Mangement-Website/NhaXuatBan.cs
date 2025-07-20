@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class NhaXuatBan
     {
         public NhaXuatBan()
@@ -20,6 +21,8 @@ namespace Library_Mangement_Website
         }
     
         public int nxb_id { get; set; }
+
+        [Display(Name = "Publisher")]
         public string Ten { get; set; }
     
         public virtual ICollection<Sach_copy> Sach_copy { get; set; }

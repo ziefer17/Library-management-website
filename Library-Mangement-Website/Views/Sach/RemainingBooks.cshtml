@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Library_Mangement_Website.Models.SachViewModel>
+
+@{
+    ViewBag.Title = "Danh sách sách còn lại";
+    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+    var currentDateTime = DateTime.Now;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div id="books">
+        <div>
+            <div>
+                <h2>Báo cáo</h2>
+                <p>Danh sách sách còn lại tháng này</p>
+                <small>Cập nhật lần cuối: @currentDateTime.ToString("hh:mm tt dd/MM/yyyy") (GMT+7)</small>
+            </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="card">
+            <div class="card-content">
+                <div class="filters">
+                    @using (Html.BeginForm("Index", "Sach", FormMethod.Get))
+                    {
+                        <div class="search-filter">
+
+                            <input type="text" placeholder="Tìm tên sách:" id="searchTerm" value="@ViewBag.SearchTerm">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                            <a href="@Url.Action("ExportToExcelRemaining", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 6px">Export to Excel</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Books Table -->
+        <div class="card">
+            <div class="card-header">
+                <h3>Danh sách sách</h3>
+            </div>
+            <div class="card-content">
+                <div class="table-container">
+                    <table class="data-table" id="booksTable">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Book name
+                                </th>
+                                <th>
+                                    Genre
+                                </th>
+                                <th>
+                                    Authors
+                                </th>
+                                <th>
+                                    Total Copies
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="font-medium">@Html.DisplayFor(modelItem => item.TenSach)</td>
+
+                                    <td><span class="badge badge-outline">@Html.DisplayFor(modelItem => item.TheLoaiTen)</span></td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Authors)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.TotalCopies)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/Scripts/script.js"></script>
+</body>
+</html>

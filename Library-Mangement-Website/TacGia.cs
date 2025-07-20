@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TacGia
     {
         public TacGia()
@@ -20,6 +21,8 @@ namespace Library_Mangement_Website
         }
     
         public int tacgia_id { get; set; }
+
+        [Display(Name = "Author")]
         public string Ten { get; set; }
     
         public virtual ICollection<Sach> Saches { get; set; }

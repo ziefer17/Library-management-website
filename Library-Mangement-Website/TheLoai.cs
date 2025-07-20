@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TheLoai
     {
         public TheLoai()
@@ -20,6 +21,8 @@ namespace Library_Mangement_Website
         }
     
         public int theloai_id { get; set; }
+
+        [Display(Name = "Genre")]
         public string Ten { get; set; }
     
         public virtual ICollection<Sach> Saches { get; set; }

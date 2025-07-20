@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TheDocGia
     {
         public TheDocGia()
@@ -21,8 +22,14 @@ namespace Library_Mangement_Website
         }
     
         public int docgia_id { get; set; }
+
+        [Display(Name = "Reader name")]
         public string Ten { get; set; }
+
+        [Display(Name = "Date created")]
         public System.DateTime NgayLapThe { get; set; }
+
+        [Display(Name = "Date of birth")]
         public System.DateTime NgaySinh { get; set; }
         public string Email { get; set; }
         public string Status { get; set; }

@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Sach
     {
         public Sach()
@@ -21,10 +22,15 @@ namespace Library_Mangement_Website
         }
     
         public int sach_id { get; set; }
+
+        [Display(Name = "Book name")]
         public string TenSach { get; set; }
+
+        [Display(Name = "Description")]
         public string ThongTin { get; set; }
         public int theloai_id { get; set; }
-    
+
+        public virtual Sach_copy Sach_Copy { get; set; }
         public virtual TheLoai TheLoai { get; set; }
         public virtual ICollection<Sach_copy> Sach_copy { get; set; }
         public virtual ICollection<TacGia> TacGias { get; set; }

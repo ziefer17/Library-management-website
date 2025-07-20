@@ -1,74 +1,65 @@
 ﻿@model Library_Mangement_Website.Sach_copy
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Chi tiết bản sao sách";
 }
 
-<h2>Details</h2>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <div id="books" class="page active">
+            <div class="page-header">
+                <div class="header-info">
+                    <h2>Chi tiết bản sao sách</h2>
+                    <p>Xem thông tin chi tiết của bản sao sách</p>
+                </div>
+            </div>
 
-<div>
-    <h4>Sach_copy</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NamXuatBan)
-        </dt>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Thông tin bản sao sách</h3>
+                </div>
+                <div class="card-content">
+                    <h4>Chi tiết</h4>
+                    <hr />
+                    <dl class="details-list">
+                        <dt>@Html.DisplayNameFor(model => model.NamXuatBan)</dt>
+                        <dd>@Html.DisplayFor(model => model.NamXuatBan)</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.NamXuatBan)
-        </dd>
+                        <dt>@Html.DisplayNameFor(model => model.SoLuong)</dt>
+                        <dd>@Html.DisplayFor(model => model.SoLuong)</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SoLuong)
-        </dt>
+                        <dt>@Html.DisplayNameFor(model => model.pdf_link)</dt>
+                        <dd>@Html.DisplayFor(model => model.pdf_link)</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.SoLuong)
-        </dd>
+                        <dt>@Html.DisplayNameFor(model => model.is_removed)</dt>
+                        <dd>@Html.DisplayFor(model => model.is_removed)</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.pdf_link)
-        </dt>
+                        <dt>@Html.DisplayNameFor(model => model.image)</dt>
+                        <dd>@Html.DisplayFor(model => model.image)</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.pdf_link)
-        </dd>
+                        <dt>@Html.DisplayNameFor(model => model.NhaXuatBan.Ten)</dt>
+                        <dd>@Html.DisplayFor(model => model.NhaXuatBan.Ten)</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.is_removed)
-        </dt>
+                        <dt>@Html.DisplayNameFor(model => model.Sach.TenSach)</dt>
+                        <dd>@Html.DisplayFor(model => model.Sach.TenSach)</dd>
+                    </dl>
 
-        <dd>
-            @Html.DisplayFor(model => model.is_removed)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.image)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.image)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NhaXuatBan.Ten)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NhaXuatBan.Ten)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Sach.TenSach)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Sach.TenSach)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.copy_id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.ActionLink("Sửa", "Edit", new { id = Model.copy_id }, new { @class = "btn btn-primary" }) |
+                            @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-outline" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

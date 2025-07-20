@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Sach_copy
     {
         public Sach_copy()
@@ -21,6 +22,8 @@ namespace Library_Mangement_Website
     
         public int copy_id { get; set; }
         public Nullable<System.DateTime> NamXuatBan { get; set; }
+
+        [Display(Name = "Amount")]
         public Nullable<int> SoLuong { get; set; }
         public string pdf_link { get; set; }
         public Nullable<bool> is_removed { get; set; }

@@ -1,42 +1,53 @@
 ﻿@model Library_Mangement_Website.Sach
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Chi tiết sách";
 }
 
-<h2>Details</h2>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <div id="books" class="page active">
+            <div class="page-header">
+                <div class="header-info">
+                    <h2>Chi tiết sách</h2>
+                    <p>Xem thông tin chi tiết của sách</p>
+                </div>
+            </div>
 
-<div>
-    <h4>Sach</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenSach)
-        </dt>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Thông tin sách</h3>
+                </div>
+                <div class="card-content">
+                    <h4>Chi tiết</h4>
+                    <hr />
+                    <dl class="details-list">
+                        <dt>@Html.DisplayNameFor(model => model.TenSach)</dt>
+                        <dd>@Html.DisplayFor(model => model.TenSach)</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenSach)
-        </dd>
+                        <dt>@Html.DisplayNameFor(model => model.ThongTin)</dt>
+                        <dd>@Html.DisplayFor(model => model.ThongTin)</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ThongTin)
-        </dt>
+                        <dt>@Html.DisplayNameFor(model => model.TheLoai.Ten)</dt>
+                        <dd>@Html.DisplayFor(model => model.TheLoai.Ten)</dd>
+                    </dl>
 
-        <dd>
-            @Html.DisplayFor(model => model.ThongTin)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TheLoai.Ten)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TheLoai.Ten)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.sach_id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            @Html.ActionLink("Sửa", "Edit", new { id = Model.sach_id }, new { @class = "btn btn-primary" }) |
+                            @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-outline" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

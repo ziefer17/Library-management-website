@@ -11,7 +11,8 @@ namespace Library_Mangement_Website
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Phat
     {
         public Phat()
@@ -20,6 +21,8 @@ namespace Library_Mangement_Website
         }
     
         public int phat_id { get; set; }
+
+        [Display(Name = "Overtime(days)")]
         public Nullable<int> SoNgayTre { get; set; }
         public Nullable<decimal> SoTienPhat { get; set; }
         public int docgia_id { get; set; }
