@@ -35,9 +35,9 @@
                         {
                             <div class="search-filter">
                                 
-                                <input type="text" placeholder="Tìm tên sách:" id="searchTerm" value="@ViewBag.SearchTerm">
+                                <input type="text" placeholder="Tìm tên sách:" name="searchTerm" id="searchTerm" value="@ViewBag.SearchTerm">
                                 <button type="submit" class="btn btn-primary">Search</button>
-                                <a href="@Url.Action("ExportToExcel", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 5px">Export to Excel</a>
+                                <a href="@Url.Action("ExportToExcel", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 6px">Export to Excel</a>
                             </div>
                         }
                     </div>

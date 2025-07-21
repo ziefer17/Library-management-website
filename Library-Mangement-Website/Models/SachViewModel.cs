@@ -16,5 +16,6 @@ namespace Library_Mangement_Website.Models
         public string Publisher { get; set; }
 
         public String YearPublished { get; set; }
+
     }
 }

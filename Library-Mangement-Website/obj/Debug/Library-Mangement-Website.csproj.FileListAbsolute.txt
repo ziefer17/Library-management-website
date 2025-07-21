@@ -176,3 +176,7 @@ C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-we
 C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\System.Numerics.Vectors.xml
 C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\System.Security.Cryptography.Xml.xml
+C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\PagedList.dll
+C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\PagedList.Mvc.dll
+C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\PagedList.xml
+C:\Users\84989\Downloads\Documents\Cong Nghe Phan Mem\Code\Library-management-website\Library-Mangement-Website\bin\PagedList.Mvc.xml

@@ -1,19 +1,248 @@
-﻿@{
+﻿@model PagedList.IPagedList<Library_Mangement_Website.Sach>
+@using PagedList.Mvc;
+@{
     ViewBag.Title = "HomeMain";
     Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
 }
 
-<!DOCTYPE html>
+<style>
+    .ui-autocomplete {
+        max-height: 300px;
+        overflow-y: auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div class="page-header">
-        <h2>Dashboard</h2>
-        <p>Tổng quan hệ thống quản lý thư viện</p>
-    </div>
-</body>
-</html>
+    .autocomplete-item {
+        display: flex;
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+        align-items: center;
+    }
+
+        .autocomplete-item img {
+            width: 50px;
+            height: 65px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+    .autocomplete-details {
+        flex: 1;
+    }
+
+    .autocomplete-title {
+        font-weight: bold;
+        color: #007BFF;
+    }
+
+    .autocomplete-sub {
+        font-size: 12px;
+        color: #666;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .pagination li a,
+        .pagination li span {
+            padding: 6px 12px;
+            margin: 2px;
+            border: 1px solid #007BFF;
+            color: #007BFF;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .pagination li.active span {
+            background-color: #007BFF;
+            color: white;
+            border-color: #007BFF;
+        }
+
+    .book-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .book-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        background-color: #fff;
+        transition: transform 0.2s ease;
+    }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+    .book-card-body {
+        padding: 15px;
+    }
+
+    .book-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #007BFF;
+    }
+
+    .book-meta {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 6px;
+    }
+
+    .book-info {
+        font-size: 13px;
+        color: #333;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+        .pagination li a,
+        .pagination li span {
+            padding: 6px 12px;
+            margin: 2px;
+            border: 1px solid #007BFF;
+            color: #007BFF;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .pagination li.active span {
+            background-color: #007BFF;
+            color: white;
+            border-color: #007BFF;
+        }
+
+    ul.pagination {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+        ul.pagination li {
+            display: inline-block;
+            margin: 0 3px;
+            list-style-type: none;
+        }
+
+            ul.pagination li.active a {
+                background-color: #007bff;
+                color: white !important;
+                border-color: #007bff;
+            }
+
+            ul.pagination li a {
+                color: #007bff;
+                border: 1px solid #007bff;
+                padding: 6px 12px;
+                border-radius: 6px;
+                text-decoration: none;
+            }
+
+                ul.pagination li a:hover {
+                    background-color: #0056b3;
+                    color: white;
+                }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main, .content-wrapper {
+        flex: 1;
+    }
+
+    .pagination-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    a.book-card {
+        text-decoration: none;
+        color: inherit; /* Nếu không muốn đổi màu chữ */
+    }
+</style>
+<div class="page-header">
+    <h2>Dashboard</h2>
+    <p>Tổng quan hệ thống quản lý thư viện</p>
+</div>
+<main>
+    @if (Model != null && Model.Count > 0)
+    {
+        <div class="book-list ">
+            @foreach (var sach in Model)
+            {
+                <a href="@Url.Action("ChiTiet", "Home", new { id = sach.sach_id })"
+                   class="book-card ">
+                    <img src="@Url.Content("~/Content/images/Default_book_cover.png")" alt="@sach.TenSach" />
+                    <div class="book-card-body">
+                        <div class="book-title">@sach.TenSach</div>
+                        <div class="book-meta">Tác giả: @string.Join(", ", sach.TacGias.Select(t => t.Ten))</div>
+                        @*<div class="book-meta">Thể loại: @sach.TheLoai?.Ten</div>*@
+                        <div class="book-info">@sach.ThongTin</div>
+                    </div>
+
+                </a>
+            }
+
+        </div>
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("HomeMain", new { page, keyword = Request["keyword"] }))
+        </div>
+    }
+    else
+    {
+        <p>Không tìm thấy sách phù hợp.</p>
+    }
+</main>
+
+@section scripts {
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#keyword").autocomplete({
+                source: '@Url.Action("Suggest", "Home")',
+                minLength: 1,
+                select: function (event, ui) {
+                    $("#keyword").val(ui.item.value);
+                    return false;
+                }
+            }).autocomplete("instance")._renderItem = function (ul, item) {
+                return $("<li>")
+                    .append(`<div class="autocomplete-item">
+                                <img src="${item.anh}" />
+                                <div class="autocomplete-details">
+                                    <div class="autocomplete-title">${item.label}</div>
+                                    <div class="autocomplete-sub">Tác giả: ${item.tacgia ?? 'N/A'} | Thể loại: ${item.theloai}</div>
+                                </div>
+                            </div>`)
+                    .appendTo(ul);
+            };
+        });
+    </script>
+}

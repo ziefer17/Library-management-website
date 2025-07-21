@@ -15,6 +15,16 @@ namespace Library_Mangement_Website.Controllers
     {
         private libraryEntities db = new libraryEntities();
 
+        public ActionResult History()
+        {
+            var readerData = db.TheDocGias
+                .Include(s => s.PhieuMuons)
+                .Include(s => s.Phats)
+                .ToList();
+
+            return View(readerData);
+        }
+
         // GET: TheDocGia
         public async Task<ActionResult> Index()
         {

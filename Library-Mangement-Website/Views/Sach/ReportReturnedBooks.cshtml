@@ -20,7 +20,7 @@
         <div>
             <div>
                 <h2>Báo cáo</h2>
-                <p>Danh sách sách đã trả hôm nay</p>
+                <p>Danh sách sách đã trả hôm nay @currentDateTime.ToString("dd/MM/yyyy")</p>
                 <small>Cập nhật lần cuối: @currentDateTime.ToString("hh:mm tt dd/MM/yyyy") (GMT+7)</small>
             </div>
         </div>
@@ -33,6 +33,7 @@
                     {
                         <div class="search-filter">
                             <input type="text" placeholder="Tìm tên sách:" name="searchTerm" id="searchTerm" value="@ViewBag.SearchTerm" class="form-control" style="display:inline-block; width:300px;" />
+                            
                             <button type="submit" class="btn btn-primary">Search</button>
                             <a href="@Url.Action("ExportToExcelReturnedBooks", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 6px">Export to Excel</a>
                         </div>

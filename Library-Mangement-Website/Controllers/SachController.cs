@@ -11,6 +11,9 @@ using Library_Mangement_Website;
 using Library_Mangement_Website.Models;
 using OfficeOpenXml;
 using System.IO;
+using System.Security.Policy;
+using OfficeOpenXml.Drawing.Chart;
+using System.Drawing;
 
 namespace Library_Mangement_Website.Controllers
 {
@@ -317,6 +320,160 @@ namespace Library_Mangement_Website.Controllers
                 return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
             }
         }
+        public ActionResult BorrowedBooksByGenre()
+        {
+            try
+            {
+                var currentDate = DateTime.Today; 
+                var startOfMonth = new DateTime(currentDate.Year, currentDate.Month, 1); 
+                var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1);
+
+                var query = db.Saches
+                    .Include(s => s.TheLoai)
+                    .Include(s => s.TacGias)
+                    .Include(s => s.Sach_copy)
+                    .Where(s => s.Sach_copy.Any(sc =>
+                        sc.PhieuMuons.Any(pm =>
+                            pm.NgayMuon != null &&
+                            pm.NgayMuon >= startOfMonth &&
+                            pm.NgayMuon <= endOfMonth)));
+
+                var sachesData = query.ToList();
+
+                var genreData = sachesData
+                    .GroupBy(s => s.TheLoai != null ? s.TheLoai.Ten : "N/A")
+                    .Select(g => new GenreBorrowedModel
+                    {
+                        Genre = g.Key,
+                        BorrowedCopies = g.Sum(s => s.Sach_copy
+                            .SelectMany(sc => sc.PhieuMuons)
+                            .Count(pm => pm.NgayMuon != null &&
+                                         pm.NgayMuon >= startOfMonth &&
+                                         pm.NgayMuon <= endOfMonth))
+                    })
+                    .ToList();
+
+                // Calculate genre percentages for Doughnut chart
+                var totalBorrowedCopies = genreData.Sum(g => g.BorrowedCopies);
+                foreach (var genre in genreData)
+                {
+                    genre.Percentage = totalBorrowedCopies > 0
+                        ? (genre.BorrowedCopies * 100.0 / totalBorrowedCopies)
+                        : 0;
+                }
+
+                ViewBag.GenreData = genreData;
+                ViewBag.TotalBorrowedCopies = totalBorrowedCopies;
+
+                return View(genreData);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = "An error occurred: " + ex.Message;
+                return View(new List<GenreBorrowedModel>());
+            }
+        }
+
+        public ActionResult ExportToExcelBorrowedBooksByGenre()
+        {
+            try
+            {
+                var currentDate = DateTime.Today; // 2025-07-21
+                var startOfMonth = new DateTime(currentDate.Year, currentDate.Month, 1); // 2025-07-01
+                var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1); // 2025-07-31
+
+                var query = db.Saches
+                    .Include(s => s.TheLoai)
+                    .Include(s => s.Sach_copy)
+                    .Where(s => s.Sach_copy.Any(sc =>
+                        sc.PhieuMuons.Any(pm =>
+                            pm.NgayMuon != null &&
+                            pm.NgayMuon >= startOfMonth &&
+                            pm.NgayMuon <= endOfMonth)));
+
+                var sachesData = query.ToList();
+
+                var genreData = sachesData
+                    .GroupBy(s => s.TheLoai != null ? s.TheLoai.Ten : "N/A")
+                    .Select(g => new GenreBorrowedModel
+                    {
+                        Genre = g.Key,
+                        BorrowedCopies = g.Sum(s => s.Sach_copy
+                            .SelectMany(sc => sc.PhieuMuons)
+                            .Count(pm => pm.NgayMuon != null &&
+                                         pm.NgayMuon >= startOfMonth &&
+                                         pm.NgayMuon <= endOfMonth))
+                    })
+                    .ToList();
+
+                var totalBorrowedCopies = genreData.Sum(g => g.BorrowedCopies);
+                foreach (var genre in genreData)
+                {
+                    genre.Percentage = totalBorrowedCopies > 0
+                        ? (genre.BorrowedCopies * 100.0 / totalBorrowedCopies)
+                        : 0;
+                }
+
+                ExcelPackage.License.SetNonCommercialPersonal("My Name");
+                using (var package = new ExcelPackage())
+                {
+                    var worksheet = package.Workbook.Worksheets.Add("BorrowedBooksByGenre");
+
+                    
+                    var currentDateTime = DateTime.Now;
+                    worksheet.Cells[1, 1].Value = $"Cập nhật lần cuối: {currentDateTime.ToString("hh:mm tt dd/MM/yyyy")} (GMT+7)";
+                    worksheet.Cells[1, 1].Style.Font.Bold = true;
+
+
+                    if (genreData.Any())
+                    {                      
+                        for (int i = 0; i < genreData.Count; i++)
+                        {
+                            worksheet.Cells[i + 6, 1].Value = genreData[i].Genre;
+                            worksheet.Cells[i + 6, 2].Value = genreData[i].Percentage;
+                        }
+
+                        // Create Doughnut chart
+                        var chart = worksheet.Drawings.AddChart("GenreChart", eChartType.Doughnut);
+                        chart.SetPosition(8, 0, 4, 0);
+                        chart.SetSize(400, 300);
+                        chart.Title.Text = "Phân bố sách mượn theo thể loại";
+                        chart.Legend.Position = eLegendPosition.Top;
+                        chart.VaryColors = true;
+
+                        // Add data series
+                        var series = chart.Series.Add(worksheet.Cells[6, 2, 5 + genreData.Count, 2], worksheet.Cells[6, 1, 5 + genreData.Count, 1]);
+                        series.Header = "Percentage";
+                    }
+
+
+                    worksheet.Cells[5, 1].Value = "Genre";
+                    worksheet.Cells[5, 2].Value = "Borrowed Copies";
+                    worksheet.Cells[5, 3].Value = "Percentage (%)";
+
+                    
+                    for (int i = 0; i < genreData.Count; i++)
+                    {
+                        worksheet.Cells[i + 6, 1].Value = genreData[i].Genre;
+                        worksheet.Cells[i + 6, 2].Value = genreData[i].BorrowedCopies;
+                        worksheet.Cells[i + 6, 3].Value = genreData[i].Percentage.ToString("F2");
+                    }
+
+                    worksheet.Cells.AutoFitColumns();
+
+                    var stream = new MemoryStream();
+                    package.SaveAs(stream);
+                    stream.Position = 0;
+                    string fileName = $"BorrowedBooksByGenre_{currentDateTime:yyyyMMddHHmmss}.xlsx";
+                    return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                return new HttpStatusCodeResult(500, "Error generating Excel file: " + ex.Message);
+            }
+        }
+
 
         public ActionResult ReportReturnedBooks(string searchTerm)
         {

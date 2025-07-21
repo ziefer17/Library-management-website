@@ -6,20 +6,27 @@
     <title>Hệ Thống Quản Lý Thư Viện</title>
     <link rel="stylesheet" href="~/Content/myCSS/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="header-content">
             <div class="header-left">
-                <i class="fas fa-book-open"></i>
+                <i action="@Url.Action("HomeMain", "Home")" class="fas fa-book-open"></i>
                 <h1>Hệ Thống Quản Lý Thư Viện Huflit</h1>
             </div>
             <div class="header-center">
-                <div class="search-box">
+                <form action="@Url.Action("HomeMain", "Home")" method="get" class="search-box">
                     <i class="fas fa-search"></i>
-                    <input type="text" placeholder="Tìm kiếm sách, tác giả,...">
-                </div>
+                    <input type="text" id="keyword" name="keyword" value="@ViewBag.Keyword" class="form-control" placeholder="Tìm sách, tác giả, thể loại..." />
+                </form>
             </div>
             <div class="header-right">
                 <button class="notification-btn">
@@ -51,15 +58,15 @@
                 </button>
             </div>
             <nav class="sidebar-nav">
-                <a href="#" class="nav-item active">
+                <a href="@Url.Action("HomeMain", "Home")" class="nav-item">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Tổng quan</span>
                 </a>
-                <a href="#" class="nav-item">
+                <a href="@Url.Action("Index", "Sach")" class="nav-item">
                     <i class="fas fa-book"></i>
                     <span>Quản lý sách</span>
                 </a>
-                <a href="#" class="nav-item">
+                <a href="@Url.Action("ReaderMenu","Home")" class="nav-item">
                     <i class="fas fa-users"></i>
                     <span>Độc giả</span>
                 </a>
@@ -67,7 +74,7 @@
                     <i class="fas fa-bookmark"></i>
                     <span>Lập phiếu</span>
                 </a>
-                <a href="#" class="nav-item">
+                <a href="@Url.Action("ReportMenu", "Home")" class="nav-item">
                     <i class="fas fa-chart-bar"></i>
                     <span>Thống kê</span>
                 </a>
@@ -81,11 +88,13 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="page active">
-                
+
 
                 <!-- Stats Cards -->
                 <div class="stats-grid">
+
                 </div>
+
                 @RenderBody()
                 <!-- Content Grid -->
                 <div class="content-grid">
