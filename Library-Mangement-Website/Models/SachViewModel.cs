@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -17,5 +18,15 @@ namespace Library_Mangement_Website.Models
 
         public String YearPublished { get; set; }
 
+        public string DayBorrowed { get; set; }
+
+        public string DayOvertime { get; set; }
+        public string DateReturned { get; set; }
+
+        public string TenDocGia { get; set; }
+        public string EmailDocGia { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:C}")]
+        public Decimal Debt { get; set; }
     }
 }

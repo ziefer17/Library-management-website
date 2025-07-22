@@ -32,8 +32,11 @@ namespace Library_Mangement_Website
         [Display(Name = "Date of birth")]
         public System.DateTime NgaySinh { get; set; }
         public string Email { get; set; }
+
         public string Status { get; set; }
         public string Password { get; set; }
+
+        [Display(Name = "Reader type")]
         public string LoaiDG { get; set; }
     
         public virtual ICollection<Phat> Phats { get; set; }

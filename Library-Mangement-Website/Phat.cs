@@ -24,6 +24,8 @@ namespace Library_Mangement_Website
 
         [Display(Name = "Overtime(days)")]
         public Nullable<int> SoNgayTre { get; set; }
+
+        [Display(Name = "Fine")]
         public Nullable<decimal> SoTienPhat { get; set; }
         public int docgia_id { get; set; }
         public int pm_id { get; set; }

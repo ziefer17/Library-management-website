@@ -201,8 +201,8 @@
                     <div class="book-card-body">
                         <div class="book-title">@sach.TenSach</div>
                         <div class="book-meta">Tác giả: @string.Join(", ", sach.TacGias.Select(t => t.Ten))</div>
-                        @*<div class="book-meta">Thể loại: @sach.TheLoai?.Ten</div>*@
-                        <div class="book-info">@sach.ThongTin</div>
+                        <div class="book-meta">Thể loại: @sach.TheLoai.Ten</div>
+                        
                     </div>
 
                 </a>
@@ -235,7 +235,7 @@
             }).autocomplete("instance")._renderItem = function (ul, item) {
                 return $("<li>")
                     .append(`<div class="autocomplete-item">
-                                <img src="${item.anh}" />
+                                 <img src="@Url.Content("~/Content/images/Default_book_cover.png")" />
                                 <div class="autocomplete-details">
                                     <div class="autocomplete-title">${item.label}</div>
                                     <div class="autocomplete-sub">Tác giả: ${item.tacgia ?? 'N/A'} | Thể loại: ${item.theloai}</div>

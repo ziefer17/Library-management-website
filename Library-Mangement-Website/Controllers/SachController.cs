@@ -124,6 +124,7 @@ namespace Library_Mangement_Website.Controllers
                 .Include(s => s.TacGias)
                 .Include(s => s.Sach_copy)
                 .ToList();
+            
 
             if (!string.IsNullOrEmpty(searchTerm))
             {
@@ -131,7 +132,6 @@ namespace Library_Mangement_Website.Controllers
                     .Where(s => s.TenSach.IndexOf(searchTerm, StringComparison.OrdinalIgnoreCase) >= 0)
                     .ToList();
             }
-
 
             var saches = sachesData.Select(s => new SachViewModel
             {
@@ -183,7 +183,7 @@ namespace Library_Mangement_Website.Controllers
                 worksheet.Cells[1, 3].Value = "Authors";
                 worksheet.Cells[1, 4].Value = "Total Copies";
 
-                // Add data 
+                
                 for (int i = 0; i < saches.Count; i++)
                 {
                     worksheet.Cells[i + 2, 1].Value = saches[i].TenSach;
@@ -205,7 +205,6 @@ namespace Library_Mangement_Website.Controllers
 
         public ActionResult RemovedBooks(string searchTerm)
         {
-            // Get current date (date only, no time)
             var currentDate = DateTime.Today;
 
 
@@ -240,7 +239,6 @@ namespace Library_Mangement_Website.Controllers
                     : "N/A",
             }).ToList();
 
-            // Store search term in ViewBag for the view
             ViewBag.SearchTerm = searchTerm;
 
             return View(saches);
@@ -260,7 +258,6 @@ namespace Library_Mangement_Website.Controllers
                     sc.is_removed == true))
                 .ToList();
 
-            // Apply search filter if provided
             if (!string.IsNullOrEmpty(searchTerm))
             {
                 sachesData = sachesData
@@ -268,7 +265,7 @@ namespace Library_Mangement_Website.Controllers
                     .ToList();
             }
 
-            // Transform to SachViewModel
+            
             var saches = sachesData.Select(s => new SachViewModel
             {
                 SachId = s.sach_id,
@@ -288,19 +285,19 @@ namespace Library_Mangement_Website.Controllers
             {
                 var worksheet = package.Workbook.Worksheets.Add("ReturnedBooks");
 
-                // Add CurrentDateTime
+                
                 var currentDateTime = DateTime.Now;
                 worksheet.Cells[1, 1].Value = $"Cập nhật lần cuối: {currentDateTime.ToString("hh:mm tt dd/MM/yyyy")} (GMT+7)";
                 worksheet.Cells[1, 1].Style.Font.Bold = true;
 
-                // Add table headers
+                
                 worksheet.Cells[3, 1].Value = "Book Name";
                 worksheet.Cells[3, 2].Value = "Genre";
                 worksheet.Cells[3, 3].Value = "Authors";
                 worksheet.Cells[3, 4].Value = "Publisher";
                 worksheet.Cells[3, 5].Value = "Year published";
 
-                // Add data
+                
                 for (int i = 0; i < saches.Count; i++)
                 {
                     worksheet.Cells[i + 4, 1].Value = saches[i].TenSach;
@@ -310,7 +307,7 @@ namespace Library_Mangement_Website.Controllers
                     worksheet.Cells[i + 4, 5].Value = saches[i].YearPublished;
                 }
 
-                // Auto-fit columns
+                
                 worksheet.Cells.AutoFitColumns();
 
                 var stream = new MemoryStream();
@@ -353,7 +350,7 @@ namespace Library_Mangement_Website.Controllers
                     })
                     .ToList();
 
-                // Calculate genre percentages for Doughnut chart
+                
                 var totalBorrowedCopies = genreData.Sum(g => g.BorrowedCopies);
                 foreach (var genre in genreData)
                 {
@@ -378,9 +375,9 @@ namespace Library_Mangement_Website.Controllers
         {
             try
             {
-                var currentDate = DateTime.Today; // 2025-07-21
-                var startOfMonth = new DateTime(currentDate.Year, currentDate.Month, 1); // 2025-07-01
-                var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1); // 2025-07-31
+                var currentDate = DateTime.Today; 
+                var startOfMonth = new DateTime(currentDate.Year, currentDate.Month, 1);
+                var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1); 
 
                 var query = db.Saches
                     .Include(s => s.TheLoai)
@@ -477,7 +474,6 @@ namespace Library_Mangement_Website.Controllers
 
         public ActionResult ReportReturnedBooks(string searchTerm)
         {
-            // Get current date (date only, no time)
             var currentDate = DateTime.Today; 
 
             
@@ -514,7 +510,6 @@ namespace Library_Mangement_Website.Controllers
                     : "N/A",
             }).ToList();
 
-            // Store search term in ViewBag for the view
             ViewBag.SearchTerm = searchTerm;
 
             return View(saches);
@@ -538,7 +533,6 @@ namespace Library_Mangement_Website.Controllers
                         DbFunctions.TruncateTime(pm.NgayTra) == currentDate)))
                 .ToList();
 
-            // Apply search filter if provided
             if (!string.IsNullOrEmpty(searchTerm))
             {
                 sachesData = sachesData
@@ -546,7 +540,6 @@ namespace Library_Mangement_Website.Controllers
                     .ToList();
             }
 
-            // Transform to SachViewModel
             var saches = sachesData.Select(s => new SachViewModel
             {
                 SachId = s.sach_id,
@@ -566,19 +559,19 @@ namespace Library_Mangement_Website.Controllers
             {
                 var worksheet = package.Workbook.Worksheets.Add("ReturnedBooks");
 
-                // Add CurrentDateTime
+                
                 var currentDateTime = DateTime.Now;
                 worksheet.Cells[1, 1].Value = $"Cập nhật lần cuối: {currentDateTime.ToString("hh:mm tt dd/MM/yyyy")} (GMT+7)";
                 worksheet.Cells[1, 1].Style.Font.Bold = true;
 
-                // Add table headers
+                
                 worksheet.Cells[3, 1].Value = "Book Name";
                 worksheet.Cells[3, 2].Value = "Genre";
                 worksheet.Cells[3, 3].Value = "Authors";
                 worksheet.Cells[3, 4].Value = "Publisher";
                 worksheet.Cells[3, 5].Value = "Year published";
 
-                // Add data
+                
                 for (int i = 0; i < saches.Count; i++)
                 {
                     worksheet.Cells[i + 4, 1].Value = saches[i].TenSach;
@@ -588,7 +581,7 @@ namespace Library_Mangement_Website.Controllers
                     worksheet.Cells[i + 4, 5].Value = saches[i].YearPublished;
                 }
 
-                // Auto-fit columns
+                
                 worksheet.Cells.AutoFitColumns();
 
                 var stream = new MemoryStream();
@@ -599,6 +592,7 @@ namespace Library_Mangement_Website.Controllers
             }
         }
 
+        
         // GET: Sach/Details/5
         public async Task<ActionResult> Details(int? id)
         {

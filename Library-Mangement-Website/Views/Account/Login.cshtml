@@ -1,0 +1,72 @@
+﻿@model Library_Mangement_Website.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "Đăng nhập tài khoản";
+    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+}
+@if (ViewBag.AlertMessage != null)
+{
+    <div class="alert alert-success text-center">@ViewBag.AlertMessage</div>
+}
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger text-center">@ViewBag.Message</div>
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Content/books.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+        <div class="card" style="max-width: 500px; width: 100%;">
+            <div class="card-header">
+                <h3><i class="fas fa-sign-in-alt"></i> Đăng nhập</h3>
+            </div>
+            <div class="card-content">
+                @if (ViewBag.Message != null)
+                {
+                    <div class="alert alert-danger">@ViewBag.Message</div>
+                }
+
+                @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                        <label for="Email"><i class="fas fa-envelope"></i> Email</label>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Nhập email" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Password"><i class="fas fa-lock"></i> Mật khẩu</label>
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Nhập mật khẩu" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="form-group" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-sign-in-alt"></i> Đăng nhập
+                        </button>
+                    </div>
+
+                    <p style="margin-top: 16px; text-align: center;">
+                        Chưa có tài khoản?
+                        <a href="@Url.Action("Register", "Account")" style="color: #3b82f6;">Đăng ký</a>
+                    </p>
+                }
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jqueryval")
+</body>
+</html>
+
+

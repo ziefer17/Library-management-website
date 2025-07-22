@@ -29,12 +29,12 @@
         <div class="card">
             <div class="card-content">
                 <div class="filters">
-                    @using (Html.BeginForm("ReportOvertimeBooks", "Sach", FormMethod.Get))
+                    @using (Html.BeginForm("ReportOvertimeBooks", "PhieuMuons", FormMethod.Get))
                     {
                         <div class="search-filter">
                             <input type="text" placeholder="Tìm tên sách:" name="searchTerm" id="searchTerm" value="@ViewBag.SearchTerm" class="form-control" style="display:inline-block; width:300px;" />
                             <button type="submit" class="btn btn-primary">Search</button>
-                            <a href="@Url.Action("ExportToExcelOvertimeBooks", "Sach", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 6px">Export to Excel</a>
+                            <a href="@Url.Action("ExportToExcelOvertime", "PhieuMuons", new { searchTerm = ViewBag.SearchTerm })" class="btn btn-primary" style="padding: 5px; margin: 6px">Export to Excel</a>
                         </div>
                     }
                 </div>
@@ -66,17 +66,19 @@
                             {
                                 <tr>
                                     <td class="font-medium">@Html.DisplayFor(modelItem => item.TenSach)</td>
-                                    <td><span class="badge badge-outline">@Html.DisplayFor(modelItem => item.TheLoaiTen)</span></td>
                                     <td>@Html.DisplayFor(modelItem => item.Authors)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Publisher)</td>
                                     <td>@Html.DisplayFor(modelItem => item.YearPublished)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.TenDocGia)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.EmailDocGia)</td>
+                                    <td><span class="badge badge-outline">@Html.DisplayFor(modelItem => item.DayOvertime)</span></td>
                                 </tr>
                             }
                         </tbody>
                     </table>
                     @if (!Model.Any())
                     {
-                        <p>Không có sách nào được trả hôm nay.</p>
+                        <p>Không có sách nào trả trễ.</p>
                     }
                 </div>
             </div>

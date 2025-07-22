@@ -8,8 +8,9 @@ namespace Library_Mangement_Website.Models
 {
     public class LoginViewModel
     {
-        [Required(ErrorMessage = "Vui lòng nhập tên đăng nhập")]
-        public string Username { get; set; }
+        [Required(ErrorMessage = "Vui lòng nhập email")]
+        [EmailAddress(ErrorMessage = "Email không hợp lệ")]
+        public string Email { get; set; }
 
         [Required(ErrorMessage = "Vui lòng nhập mật khẩu")]
         [DataType(DataType.Password)]
