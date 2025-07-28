@@ -12,6 +12,7 @@ using Library_Mangement_Website.Models;
 using OfficeOpenXml;
 using System.IO;
 using System.Web.UI.WebControls;
+using Microsoft.Ajax.Utilities;
 
 namespace Library_Mangement_Website.Controllers
 {
@@ -33,11 +34,9 @@ namespace Library_Mangement_Website.Controllers
                 .Include(p => p.PhieuMuon.Sach_copy.Sach.TacGias)
                 .Include(p => p.PhieuMuon.Sach_copy)
                 .Include(p => p.PhieuMuon.TheDocGia)
-                .Where(p => p.PhieuMuon.NgayTra != null)
+                .Where(p => p.PhieuMuon.NgayTra == null)
                 .Where(p => p.PhieuMuon.TheDocGia.docgia_id == id)
                 .ToList();
-
-            
 
             if (!string.IsNullOrEmpty(searchTerm))
             {
@@ -45,7 +44,6 @@ namespace Library_Mangement_Website.Controllers
                     .Where(s => s.PhieuMuon.Sach_copy.Sach.TenSach.IndexOf(searchTerm, StringComparison.OrdinalIgnoreCase) >= 0)
                     .ToList();
             }
-
 
             var saches = phatData.Select(s => new SachViewModel
             {
@@ -58,7 +56,8 @@ namespace Library_Mangement_Website.Controllers
                     ? (currentDate - s.PhieuMuon.NgayMuon.Value).Days + 12 + " days"
                     : "N/A",
                 Debt = (decimal)s.SoTienPhat,
-                DateReturned = s.PhieuMuon.NgayTra.HasValue ? s.PhieuMuon.NgayMuon.Value.ToString("dd/MM/yyyy") : "N/A",
+                DayBorrowed = s.PhieuMuon.NgayMuon.HasValue ? s.PhieuMuon.NgayMuon.Value.ToString("dd/MM/yyyy") : "N/A",
+                DateReturned = s.PhieuMuon.NgayTra.HasValue ? s.PhieuMuon.NgayTra.Value.ToString("dd/MM/yyyy") : "N/A",
             }).ToList();
 
             var totalDebt = saches.Sum(g => g.Debt);

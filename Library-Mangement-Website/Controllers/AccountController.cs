@@ -35,12 +35,9 @@ namespace Library_Mangement_Website.Controllers
                     return View(model);
                 }
 
-                var docGia = new TheDocGia
-                {
-                    Password = model.Password
-                };
 
-                db.TheDocGias.Add(docGia);
+                //TheDocGia.Password = model.Password;
+
                 db.SaveChanges();
 
                 return RedirectToAction("Login", "Account");

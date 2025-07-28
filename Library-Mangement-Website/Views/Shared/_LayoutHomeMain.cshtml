@@ -38,13 +38,30 @@
                         <i class="fas fa-user"></i>
                     </button>
                     <div class="user-dropdown">
-                        <a href="#"><i class="fas fa-user-circle"></i> @Session["UserName"]</a> 
+                        <a href="#"><i class="fas fa-user-circle"></i> @Session["UserName"]</a>
                         <a href="#"><i class="fas fa-user-circle"></i> Hồ sơ</a>
                         <a href="#"><i class="fas fa-cog"></i> Cài đặt</a>
                         <hr>
                         <a href="#"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
                     </div>
                 </div>
+                @if (Session["UserId"] == null)
+                {
+                    <button class="user-btn" onclick="location.href='@Url.Action("Login","Account")'">
+                        <h3> Đăng nhập</h3>
+                    </button>
+                    <button class="user-btn" onclick="location.href='@Url.Action("Register","Account")'">
+                        <h3> Đăng ký</h3>
+                    </button>
+                }
+                else
+                {
+                    <button class="user-btn">
+                        <h3> @Session["UserName"]</h3>
+                    </button>
+                }
+
+
             </div>
         </div>
     </header>
