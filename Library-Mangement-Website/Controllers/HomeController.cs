@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Data.Entity;
 using PagedList;
 using System.Web.Razor.Tokenizer.Symbols;
+using Library_Mangement_Website.Models;
 
 
 namespace Library_Mangement_Website.Controllers
@@ -13,6 +14,7 @@ namespace Library_Mangement_Website.Controllers
     public class HomeController : Controller
     {
         private libraryEntities db = new libraryEntities();
+        private string defaultImage = "https://raw.githubusercontent.com/ziefer17/PDFStorage/main/Images/Default_book_cover.png";
         public ActionResult HomeMain(string keyword, int? page)
         {
             int pageSize = 8;
@@ -55,18 +57,7 @@ namespace Library_Mangement_Website.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult ChiTiet(int id)
-        {
-            var sach = db.Saches.Include(s => s.TheLoai)
-                                .Include(s => s.TacGias)
-                                .FirstOrDefault(s => s.sach_id == id);
-            if (sach == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sach);
-        }
-
+        
         public ActionResult ReaderMenu()
         {
             return View();
@@ -93,6 +84,70 @@ namespace Library_Mangement_Website.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        //Chi tiết sách
+        public ActionResult ChiTiet(int? id)
+        {
+            if (id == null)
+                return HttpNotFound();
+
+            var sachCopy = db.Sach_copy
+                .Include(s => s.Sach.TacGias)
+                .Include(s => s.Sach.TheLoai)
+                .Include(s => s.Sach)
+                .Include(s => s.NhaXuatBan)
+                .FirstOrDefault(s=>s.sach_id ==id);
+
+            if (sachCopy == null)
+                return HttpNotFound();
+
+            string imageUrl = string.IsNullOrEmpty(sachCopy.image)
+                ? defaultImage
+                : sachCopy.image;
+
+            var sachCopies = db.Sach_copy
+                .Include(s => s.NhaXuatBan)
+                .Where(s => s.sach_id == sachCopy.sach_id)
+                .ToList();
+
+            foreach (var copy in sachCopies)
+            {           
+                if (string.IsNullOrEmpty(copy.pdf_link))
+                {
+                    copy.pdf_link = "#";
+                }
+            }
+
+            var deXuatSachs = db.Sach_copy
+                .Include(s => s.Sach)
+                .Where(s => s.sach_id != sachCopy.sach_id)
+                .OrderByDescending(s => Guid.NewGuid()) // Random sách
+                .Take(10)
+                .ToList();
+
+            foreach (var deXuat in deXuatSachs)
+            {
+                if (string.IsNullOrEmpty(deXuat.image))
+                {
+                    deXuat.image = defaultImage;
+                }
+            }
+
+            string pdfUrl = string.IsNullOrEmpty(sachCopy.pdf_link)
+                ? "#"
+                : sachCopy.pdf_link;
+
+            var viewModel = new SachChiTietViewModel
+            {
+                image = imageUrl,
+                Sach_Copy = sachCopy,
+                DeXuatSachs = deXuatSachs,
+                SachCopies = sachCopies
+            };
+
+            ViewBag.PdfUrl = pdfUrl;
+            return View(viewModel);
         }
     }
 }

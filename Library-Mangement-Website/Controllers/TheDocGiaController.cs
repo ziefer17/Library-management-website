@@ -18,7 +18,8 @@ namespace Library_Mangement_Website.Controllers
         // GET: TheDocGia
         public async Task<ActionResult> Index()
         {
-            return View(await db.TheDocGias.ToListAsync());
+            var docGias = await db.TheDocGias.ToListAsync();
+            return View(docGias);
         }
 
         // GET: TheDocGia/Details/5
@@ -47,16 +48,43 @@ namespace Library_Mangement_Website.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "docgia_id,Ten,NgayLapThe,NgaySinh,Email,Status,Password,LoaiDG")] TheDocGia theDocGia)
+        public async Task<ActionResult> Create([Bind(Include = "docgia_id,Ten,NgaySinh,Email,Status,LoaiDG")] TheDocGia docGia)
         {
             if (ModelState.IsValid)
             {
-                db.TheDocGias.Add(theDocGia);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                try
+                {
+                    // Check NgaySinh có nằm trong phạm vi cho phép SQL Server
+                    if (docGia.NgaySinh < new DateTime(1753, 1, 1))
+                    {
+                        ModelState.AddModelError("NgaySinh", "Ngày sinh không hợp lệ.");
+                        return View(docGia);
+                    }
+
+                    docGia.NgayLapThe = DateTime.Now;
+                    docGia.docgia_id = db.TheDocGias.Any()
+                            ? db.TheDocGias.Max(d => d.docgia_id) + 1 : 1;
+
+                    db.TheDocGias.Add(docGia);
+                    await db.SaveChangesAsync();
+                    return RedirectToAction("Index");
+                }
+                catch (System.Data.Entity.Validation.DbEntityValidationException ex)
+                {
+                    foreach (var validationErrors in ex.EntityValidationErrors)
+                    {
+                        foreach (var validationError in validationErrors.ValidationErrors)
+                        {
+                            // Ghi log lỗi ra Debug Output
+                            System.Diagnostics.Debug.WriteLine($"Property: {validationError.PropertyName} Error: {validationError.ErrorMessage}");
+                            // Hiển thị lỗi trên view
+                            ModelState.AddModelError(validationError.PropertyName, validationError.ErrorMessage);
+                        }
+                    }
+                }
             }
 
-            return View(theDocGia);
+            return View(docGia);
         }
 
         // GET: TheDocGia/Edit/5
@@ -79,15 +107,17 @@ namespace Library_Mangement_Website.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "docgia_id,Ten,NgayLapThe,NgaySinh,Email,Status,Password,LoaiDG")] TheDocGia theDocGia)
+        public async Task<ActionResult> Edit([Bind(Include = "docgia_id,Ten,NgaySinh,Email,Status,LoaiDG")] TheDocGia docGia)
         {
+            System.Diagnostics.Debug.WriteLine("Ngày sinh mới: " + docGia.NgaySinh);
             if (ModelState.IsValid)
             {
-                db.Entry(theDocGia).State = System.Data.Entity.EntityState.Modified;
+                docGia.NgayLapThe = DateTime.Now;
+                db.Entry(docGia).State = System.Data.Entity.EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            return View(theDocGia);
+            return View(docGia);
         }
 
         // GET: TheDocGia/Delete/5
