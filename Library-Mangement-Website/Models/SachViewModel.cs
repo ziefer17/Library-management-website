@@ -20,7 +20,7 @@ namespace Library_Mangement_Website.Models
 
         public string DayBorrowed { get; set; }
 
-        public string DayOvertime { get; set; }
+        public int DayOvertime { get; set; }
         public string DateReturned { get; set; }
 
         public string TenDocGia { get; set; }

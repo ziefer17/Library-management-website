@@ -1,72 +1,138 @@
-﻿@model Library_Mangement_Website.PhieuMuon
+﻿@model dynamic
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Lập phiếu mượn sách";
+    var continueFlag = TempData["Continue"] != null && (bool)TempData["Continue"];
+    var docgia_id = TempData["docgia_id"] ?? "";
+    var docgia_name = TempData["docgia_name"] ?? "";
+    var ngayMuon = DateTime.Now;
+    var hanTra = ngayMuon.AddDays(12);
 }
 
-<h2>Create</h2>
+<h2 class="text-primary mb-4"> Lập phiếu mượn sách</h2>
 
-
-@using (Html.BeginForm()) 
+@if (TempData["Success"] != null)
 {
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>PhieuMuon</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.pm_id, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.pm_id, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.pm_id, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.NgayMuon, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.NgayMuon, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NgayMuon, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.NgayTra, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.NgayTra, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NgayTra, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.docgia_id, "docgia_id", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("docgia_id", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.docgia_id, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.copy_id, "copy_id", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("copy_id", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.copy_id, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>@TempData["Success"]</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>@ViewBag.Error</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+}
+
+<div class="card shadow-sm p-4 mb-5 bg-white rounded">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label for="docgia_id">Mã độc giả</label>
+            <input type="number" name="docgia_id" id="docgia_id" value="@docgia_id" class="form-control" placeholder="Nhập mã độc giả..." />
+            <small id="docgia_info" class="form-text text-muted mt-1"></small>
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+            <label for="TenSach">Tên sách</label>
+            <input type="text" id="TenSach" class="form-control" placeholder="Nhập tên sách để tìm..." />
+            <input type="hidden" id="sach_id" />
+        </div>
+
+        <div class="form-group">
+            <label for="NXB">Nhà xuất bản</label>
+            <input type="text" id="NXB" class="form-control" placeholder="Nhập tên nhà xuất bản..." />
+        </div>
+
+        <div class="form-group">
+            <label for="Nam"> Năm xuất bản (tuỳ chọn)</label>
+            <input type="datetime" id="Nam" class="form-control" placeholder="VD: 2022" />
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-info" onclick="findCopy()">Tìm bản sao sách</button>
+            <input type="hidden" name="copy_id" id="copy_id" />
+            <small id="copy_info" class="form-text mt-2"></small>
+        </div>
+
+        <hr />
+
+        <div class="col">
+            <div class="col-md-6 form-group">
+                <label> Ngày mượn</label>
+                <input type="text" class="form-control" value="@ngayMuon.ToString("dd/MM/yyyy")" readonly />
+            </div>
+            <div class="col-md-6 form-group">
+                <label> Hạn trả</label>
+                <input type="text" class="form-control" value="@hanTra.ToString("dd/MM/yyyy")" readonly />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Xác nhận lập phiếu </button>
+    }
 </div>
 
+@if (continueFlag)
+{
+    <a href="@Url.Action("Create", "PhieuMuons")" class="btn btn-success mr-2"> Tiếp tục lập phiếu khác</a>
+}
+<a href="@Url.Action("Index", "PhieuMuons")" class="btn btn-outline-secondary"> Danh sách phiếu mượn</a>
+
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+
+    <script>
+        $(function () {
+            $("#TenSach").autocomplete({
+                source: "@Url.Action("Suggest", "PhieuMuons")",
+                select: function (event, ui) {
+                    $("#TenSach").val(ui.item.label);
+                    $("#sach_id").val(ui.item.id);
+                    return false;
+                }
+            });
+
+            $('#docgia_id').on('change', function () {
+                var id = $(this).val();
+                $.get('@Url.Action("GetDocGiaInfo", "TheDocGia")', { id: id }, function (data) {
+                    if (!data.exists) {
+                        $('#docgia_info').text(' Không tìm thấy độc giả').css('color', 'red');
+                    } else {
+                        $('#docgia_info').html(' Tên: <b>' + data.ten + '</b> | Loại: ' + data.loai + ' | Đang mượn: ' + data.soPhieuMuon).css('color', 'green');
+                    }
+                });
+            });
+        });
+
+        function findCopy() {
+            var sachId = $('#sach_id').val();
+            var nxb = $('#NXB').val();
+            var nam = $('#Nam').val();
+
+            if (!sachId || !nxb) {
+                alert("Vui lòng nhập tên sách và nhà xuất bản.");
+                return;
+            }
+
+            $.get('@Url.Action("FindCopy", "PhieuMuons")', { sach_id: sachId, nxb: nxb, nam: nam }, function (data) {
+                if (!data.found) {
+                    $('#copy_info').text(" Không tìm thấy bản sao phù hợp.").css('color', 'red');
+                    $('#copy_id').val("");
+                } else {
+                    $('#copy_info').text(" Tìm thấy bản sao (ID: " + data.copy_id + ")").css('color', 'green');
+                    $('#copy_id').val(data.copy_id);
+                }
+            });
+        }
+
+
+    </script>
 }

@@ -14,6 +14,7 @@ namespace Library_Mangement_Website.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Vui lòng nhập mật khẩu")]
+        [MinLength(6, ErrorMessage = "Mật khẩu ít nhất 6 ký tự")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 

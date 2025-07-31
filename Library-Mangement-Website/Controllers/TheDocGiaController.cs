@@ -18,6 +18,7 @@ namespace Library_Mangement_Website.Controllers
         // GET: TheDocGia
         public async Task<ActionResult> Index()
         {
+            db.Database.CommandTimeout = 120;
             var docGias = await db.TheDocGias.ToListAsync();
             return View(docGias);
         }
@@ -44,8 +45,6 @@ namespace Library_Mangement_Website.Controllers
         }
 
         // POST: TheDocGia/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Create([Bind(Include = "docgia_id,Ten,NgaySinh,Email,Status,LoaiDG")] TheDocGia docGia)
@@ -140,8 +139,8 @@ namespace Library_Mangement_Website.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            TheDocGia theDocGia = await db.TheDocGias.FindAsync(id);
-            db.TheDocGias.Remove(theDocGia);
+            TheDocGia docGia = await db.TheDocGias.FindAsync(id);
+            db.TheDocGias.Remove(docGia);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
@@ -153,6 +152,24 @@ namespace Library_Mangement_Website.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+        // AJAX: Kiểm tra mã độc giả và lấy tên độc giả
+        [HttpGet]
+        public JsonResult GetDocGiaInfo(int id)
+        {
+            var docGia = db.TheDocGias.FirstOrDefault(d => d.docgia_id == id);
+            if (docGia == null)
+            {
+                return Json(new { exists = false }, JsonRequestBehavior.AllowGet);
+            }
+
+            return Json(new
+            {
+                exists = true,
+                ten = docGia.Ten,
+                loai = docGia.LoaiDG,
+                soPhieuMuon = docGia.PhieuMuons.Count
+            }, JsonRequestBehavior.AllowGet);
         }
     }
 }

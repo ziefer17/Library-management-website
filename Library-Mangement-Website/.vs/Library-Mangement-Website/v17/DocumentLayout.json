@@ -3,100 +3,180 @@
   "WorkspaceRootPath": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\borrowedbooksbygenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\borrowedbooksbygenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\nhaxuatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:nhaxuatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\home\\homemain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\homemain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\home\\pdfreader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\pdfreader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\home\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\shared\\_layouthomemain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\shared\\_layouthomemain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\models\\sachchitietviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\sachchitietviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\sach_copy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach_copy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\sach_copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:sach_copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\controllers\\sach_copycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\sach_copycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\content\\mycss\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:content\\mycss\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\controllers\\phieumuonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\controllers\\phieumuonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\phieumuonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\reportovertimebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\reportovertimebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\home\\lapthemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\lapthemenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\controllers\\phieuthutiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\phieuthutiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\readerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\readerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\phieumuons\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\phieumuons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\controllers\\thedocgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\thedocgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\thedocgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\thedocgia\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\thedocgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\thedocgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\thedocgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\shared\\_layouthomemain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\shared\\_layouthomemain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\home\\readermenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\readermenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\phieumuons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\phieumuons\\debt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\debt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\reportovertimebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\reportovertimebooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\sachviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\account\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|c:\\users\\84989\\downloads\\documents\\cong nghe phan mem\\code\\library-management-website\\library-mangement-website\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\reportreturnedbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\reportreturnedbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\readerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\readerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\borrowedbooksbygenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\borrowedbooksbygenre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\sach_copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:sach_copy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:scripts\\bootstrap.bundle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:model1.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:model1.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\nhaxuatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:nhaxuatban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\home\\pdfreader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\pdfreader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\home\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\home\\chitiet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\sachchitietviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\sachchitietviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach_copy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach_copy\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\controllers\\sach_copycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\sach_copycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\content\\mycss\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:content\\mycss\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\controllers\\phieuthutiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\phieuthutiencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -107,20 +187,12 @@
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:controllers\\tacgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\remainingbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\remainingbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\reportreturnedbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\reportreturnedbooks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\home\\reportmenu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -137,10 +209,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\sach\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\phieumuon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,28 +235,8 @@
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\tacgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\shared\\_layouthomelogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\shared\\_layouthomelogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\thedocgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\thedocgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\thedocgia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -205,10 +253,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\tacgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\tacgia\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\sach_copy\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -245,10 +289,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\views\\phieumuons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EA805CC4-47F5-4A77-8B7B-37F711CD1699}|Library-Mangement-Website.csproj|solutionrelative:views\\phieumuons\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -258,76 +298,412 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Model1.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.cs",
-              "RelativeDocumentMoniker": "Model1.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.cs",
-              "RelativeToolTip": "Model1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T22:35:03.527Z",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Delete.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\Delete.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T13:19:59.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Model1.tt",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.tt",
-              "RelativeDocumentMoniker": "Model1.tt",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.tt",
-              "RelativeToolTip": "Model1.tt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-07-30T22:35:01.36Z",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Create.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Create.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T13:19:03.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TheDocGiaController.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\TheDocGiaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TheDocGiaController.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\TheDocGiaController.cs",
+              "RelativeToolTip": "Controllers\\TheDocGiaController.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAQwKwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T12:43:30.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "NhaXuatBan.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\NhaXuatBan.cs",
-              "RelativeDocumentMoniker": "NhaXuatBan.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\NhaXuatBan.cs",
-              "RelativeToolTip": "NhaXuatBan.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T22:34:51.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_LayoutHomeMain.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_LayoutHomeMain.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutHomeMain.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_LayoutHomeMain.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LayoutHomeMain.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAGsAAAAlAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Details.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Details.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T19:23:57.596Z",
+              "WhenOpened": "2025-07-30T17:29:43.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Edit.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\Edit.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-13T15:21:44.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Index.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Index.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T09:23:08.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LapTheMenu.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\LapTheMenu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\LapTheMenu.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\LapTheMenu.cshtml",
+              "RelativeToolTip": "Views\\Home\\LapTheMenu.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAIwIAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T12:47:38.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "HomeMain.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\HomeMain.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\HomeMain.cshtml",
               "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\HomeMain.cshtml",
               "RelativeToolTip": "Views\\Home\\HomeMain.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAMYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAMcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-20T14:14:20.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PhieuMuonsController.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\PhieuMuonsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhieuMuonsController.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\PhieuMuonsController.cs",
+              "RelativeToolTip": "Controllers\\PhieuMuonsController.cs",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAIwBABAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T23:04:34.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwEIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T19:10:32.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\TheDocGia\\Index.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Index.cshtml",
+              "RelativeToolTip": "Views\\TheDocGia\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T23:28:38.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\TheDocGia\\Create.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Create.cshtml",
+              "RelativeToolTip": "Views\\TheDocGia\\Create.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T12:45:12.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\TheDocGia\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Edit.cshtml",
+              "RelativeToolTip": "Views\\TheDocGia\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T03:42:05.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_LayoutHomeMain.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_LayoutHomeMain.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutHomeMain.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_LayoutHomeMain.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LayoutHomeMain.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAF8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-30T19:23:57.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\TheDocGia\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Delete.cshtml",
+              "RelativeToolTip": "Views\\TheDocGia\\Delete.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T12:52:37.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\TheDocGia\\Details.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Details.cshtml",
+              "RelativeToolTip": "Views\\TheDocGia\\Details.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T12:55:02.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReaderMenu.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\ReaderMenu.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ReaderMenu.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\ReaderMenu.cshtml",
+              "RelativeToolTip": "Views\\Home\\ReaderMenu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T21:58:35.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAlwEUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-31T09:26:07.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAIwEIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T23:15:41.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Debt.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Debt.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Debt.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Debt.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\Debt.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T11:37:49.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ReportOvertimeBooks.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
+              "RelativeDocumentMoniker": "Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
+              "RelativeToolTip": "Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-22T03:52:37.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SachViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\SachViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\SachViewModel.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\SachViewModel.cs",
+              "RelativeToolTip": "Models\\SachViewModel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T12:51:55.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\EditProfile.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\EditProfile.cshtml",
+              "RelativeToolTip": "Views\\Account\\EditProfile.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAFcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T09:44:10.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T15:41:59.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-21T23:10:39.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-31T09:46:17.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ReportReturnedBooks.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\ReportReturnedBooks.cshtml",
+              "RelativeDocumentMoniker": "Views\\Sach\\ReportReturnedBooks.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\ReportReturnedBooks.cshtml",
+              "RelativeToolTip": "Views\\Sach\\ReportReturnedBooks.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T12:09:17.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ReaderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\ReaderViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ReaderViewModel.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\ReaderViewModel.cs",
+              "RelativeToolTip": "Models\\ReaderViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T23:13:30.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Sach_copy.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Sach_copy.cs",
+              "RelativeDocumentMoniker": "Sach_copy.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Sach_copy.cs",
+              "RelativeToolTip": "Sach_copy.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA/wCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T09:05:23.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BorrowedBooksByGenre.cshtml",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\BorrowedBooksByGenre.cshtml",
+              "RelativeDocumentMoniker": "Views\\Sach\\BorrowedBooksByGenre.cshtml",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\BorrowedBooksByGenre.cshtml",
+              "RelativeToolTip": "Views\\Sach\\BorrowedBooksByGenre.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-20T20:15:35.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T15:41:53.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "SachChiTietViewModel.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\SachChiTietViewModel.cs",
               "RelativeDocumentMoniker": "Models\\SachChiTietViewModel.cs",
@@ -335,25 +711,47 @@
               "RelativeToolTip": "Models\\SachChiTietViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T17:14:39.74Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T17:14:39.74Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BorrowedBooksByGenre.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\BorrowedBooksByGenre.cshtml",
-              "RelativeDocumentMoniker": "Views\\Sach\\BorrowedBooksByGenre.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\BorrowedBooksByGenre.cshtml",
-              "RelativeToolTip": "Views\\Sach\\BorrowedBooksByGenre.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T20:15:35.79Z",
-              "EditorCaption": ""
+              "DocumentIndex": 35,
+              "Title": "NhaXuatBan.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\NhaXuatBan.cs",
+              "RelativeDocumentMoniker": "NhaXuatBan.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\NhaXuatBan.cs",
+              "RelativeToolTip": "NhaXuatBan.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T22:34:51.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 34,
+              "Title": "Model1.tt",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.tt",
+              "RelativeDocumentMoniker": "Model1.tt",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.tt",
+              "RelativeToolTip": "Model1.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-30T22:35:01.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.cs",
+              "RelativeDocumentMoniker": "Model1.cs",
+              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.cs",
+              "RelativeToolTip": "Model1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T22:35:03.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "Model1.Context.tt",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Model1.Context.tt",
               "RelativeDocumentMoniker": "Model1.Context.tt",
@@ -361,12 +759,11 @@
               "RelativeToolTip": "Model1.Context.tt",
               "ViewState": "AgIAAMkBAAAAAAAAAAAIwNQBAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-07-30T22:35:08.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T22:35:08.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 31,
               "Title": "bootstrap.bundle.js",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Scripts\\bootstrap.bundle.js",
               "RelativeDocumentMoniker": "Scripts\\bootstrap.bundle.js",
@@ -374,12 +771,11 @@
               "RelativeToolTip": "Scripts\\bootstrap.bundle.js",
               "ViewState": "AgIAAEkbAAAAAAAAAAApwFQbAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-07-30T22:36:28.784Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T22:36:28.784Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 37,
               "Title": "ChiTiet.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\ChiTiet.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ChiTiet.cshtml",
@@ -387,12 +783,11 @@
               "RelativeToolTip": "Views\\Home\\ChiTiet.cshtml",
               "ViewState": "AgIAAKIAAAAAAAAAAAAAALAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T17:29:25.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T17:29:25.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 36,
               "Title": "PdfReader.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\PdfReader.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\PdfReader.cshtml",
@@ -400,64 +795,11 @@
               "RelativeToolTip": "Views\\Home\\PdfReader.cshtml",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAEUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T19:22:56.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T19:22:56.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAQwIUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T19:10:32.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ReportOvertimeBooks.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
-              "RelativeDocumentMoniker": "Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
-              "RelativeToolTip": "Views\\PhieuMuons\\ReportOvertimeBooks.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T03:52:37.796Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SachViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\SachViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\SachViewModel.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\SachViewModel.cs",
-              "RelativeToolTip": "Models\\SachViewModel.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowA0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T12:51:55.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Sach_copy.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Sach_copy.cs",
-              "RelativeDocumentMoniker": "Sach_copy.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Sach_copy.cs",
-              "RelativeToolTip": "Sach_copy.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAADwvyUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T09:05:23.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 39,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach_copy\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach_copy\\Index.cshtml",
@@ -465,12 +807,11 @@
               "RelativeToolTip": "Views\\Sach_copy\\Index.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T20:36:43.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T20:36:43.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 40,
               "Title": "Sach_copyController.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\Sach_copyController.cs",
               "RelativeDocumentMoniker": "Controllers\\Sach_copyController.cs",
@@ -478,25 +819,11 @@
               "RelativeToolTip": "Controllers\\Sach_copyController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwBUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T01:02:17.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T01:02:17.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PhieuMuonsController.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\PhieuMuonsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PhieuMuonsController.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\PhieuMuonsController.cs",
-              "RelativeToolTip": "Controllers\\PhieuMuonsController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAgwCQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T23:04:34.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 41,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Content\\myCSS\\styles.css",
               "RelativeDocumentMoniker": "Content\\myCSS\\styles.css",
@@ -504,25 +831,11 @@
               "RelativeToolTip": "Content\\myCSS\\styles.css",
               "ViewState": "AgIAAOcBAAAAAAAAAAASwPcBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-30T20:29:11.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T20:29:11.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ReaderMenu.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\ReaderMenu.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\ReaderMenu.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\ReaderMenu.cshtml",
-              "RelativeToolTip": "Views\\Home\\ReaderMenu.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIAAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T21:58:35.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach\\Details.cshtml",
@@ -530,12 +843,11 @@
               "RelativeToolTip": "Views\\Sach\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:02:43.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:02:43.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 42,
               "Title": "PhieuThuTienController.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\PhieuThuTienController.cs",
               "RelativeDocumentMoniker": "Controllers\\PhieuThuTienController.cs",
@@ -543,38 +855,11 @@
               "RelativeToolTip": "Controllers\\PhieuThuTienController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T18:23:56.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T18:23:56.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ReaderViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\ReaderViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ReaderViewModel.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\ReaderViewModel.cs",
-              "RelativeToolTip": "Models\\ReaderViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T23:13:30.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Details.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Details.cshtml",
-              "RelativeToolTip": "Views\\PhieuMuons\\Details.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T17:29:43.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 45,
               "Title": "TacGiaController.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\TacGiaController.cs",
               "RelativeDocumentMoniker": "Controllers\\TacGiaController.cs",
@@ -582,25 +867,11 @@
               "RelativeToolTip": "Controllers\\TacGiaController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T21:19:36.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T21:19:36.692Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-21T23:10:39.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 46,
               "Title": "History.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\History.cshtml",
               "RelativeDocumentMoniker": "Views\\PhieuMuons\\History.cshtml",
@@ -608,12 +879,11 @@
               "RelativeToolTip": "Views\\PhieuMuons\\History.cshtml",
               "ViewState": "AgIAADYAAAAAAAAAAIBZwB4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-22T00:20:11.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T00:20:11.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 44,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach\\Edit.cshtml",
@@ -621,12 +891,11 @@
               "RelativeToolTip": "Views\\Sach\\Edit.cshtml",
               "ViewState": "AgIAADkAAAAAAAAAAAAAAEcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T11:57:59.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T11:57:59.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 47,
               "Title": "RemainingBooks.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\RemainingBooks.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach\\RemainingBooks.cshtml",
@@ -634,25 +903,11 @@
               "RelativeToolTip": "Views\\Sach\\RemainingBooks.cshtml",
               "ViewState": "AgIAAEQAAAAAAAAAAIBZwCYAAACVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:14:41.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:14:41.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ReportReturnedBooks.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\ReportReturnedBooks.cshtml",
-              "RelativeDocumentMoniker": "Views\\Sach\\ReportReturnedBooks.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\ReportReturnedBooks.cshtml",
-              "RelativeToolTip": "Views\\Sach\\ReportReturnedBooks.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAIBZwEMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:09:17.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 48,
               "Title": "ReportMenu.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\ReportMenu.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ReportMenu.cshtml",
@@ -660,12 +915,11 @@
               "RelativeToolTip": "Views\\Home\\ReportMenu.cshtml",
               "ViewState": "AgIAAH8AAAAAAAAAAEBVwHwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T15:07:28.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:07:28.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 49,
               "Title": "RemovedBooks.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\RemovedBooks.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach\\RemovedBooks.cshtml",
@@ -673,12 +927,11 @@
               "RelativeToolTip": "Views\\Sach\\RemovedBooks.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAACYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T13:25:12.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T13:25:12.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 50,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -686,12 +939,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAoAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T13:52:06.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T13:52:06.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 51,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach\\Index.cshtml",
@@ -699,25 +951,11 @@
               "RelativeToolTip": "Views\\Sach\\Index.cshtml",
               "ViewState": "AgIAAEoAAAAAAAAAAIBZwGYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-13T15:44:30.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T15:44:30.988Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\RegisterViewModel.cs",
-              "RelativeToolTip": "Models\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T15:41:59.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 52,
               "Title": "PhieuMuon.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\PhieuMuon.cs",
               "RelativeDocumentMoniker": "PhieuMuon.cs",
@@ -725,12 +963,11 @@
               "RelativeToolTip": "PhieuMuon.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T00:36:14.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T00:36:14.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 53,
               "Title": "PhieuThuTien.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\PhieuThuTien.cs",
               "RelativeDocumentMoniker": "PhieuThuTien.cs",
@@ -738,12 +975,11 @@
               "RelativeToolTip": "PhieuThuTien.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAIBJwBYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T09:06:03.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T09:06:03.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 54,
               "Title": "TheDocGia.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\TheDocGia.cs",
               "RelativeDocumentMoniker": "TheDocGia.cs",
@@ -751,12 +987,11 @@
               "RelativeToolTip": "TheDocGia.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAmwCYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T15:29:06.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T15:29:06.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 55,
               "Title": "TheLoai.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\TheLoai.cs",
               "RelativeDocumentMoniker": "TheLoai.cs",
@@ -764,12 +999,11 @@
               "RelativeToolTip": "TheLoai.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAIBJwBgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T09:04:23.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T09:04:23.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 56,
               "Title": "Sach.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Sach.cs",
               "RelativeDocumentMoniker": "Sach.cs",
@@ -777,12 +1011,11 @@
               "RelativeToolTip": "Sach.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAAwCAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T08:57:59.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T08:57:59.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 57,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TacGia\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\TacGia\\Index.cshtml",
@@ -790,25 +1023,11 @@
               "RelativeToolTip": "Views\\TacGia\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:02:23.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:02:23.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T15:41:53.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 58,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -816,64 +1035,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABkAAAAAAAAAAEBVwBMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-13T15:24:57.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T15:24:57.447Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-21T23:15:41.837Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "_LayoutHomeLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_LayoutHomeLogin.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LayoutHomeLogin.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Shared\\_LayoutHomeLogin.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LayoutHomeLogin.cshtml",
-              "ViewState": "AgIAABMAAAAAAAAAAIBZwB8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-21T23:51:20.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\TheDocGia\\Index.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Index.cshtml",
-              "RelativeToolTip": "Views\\TheDocGia\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-21T23:28:38.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\TheDocGia\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TheDocGia\\Edit.cshtml",
-              "RelativeToolTip": "Views\\TheDocGia\\Edit.cshtml",
-              "ViewState": "AgIAAAcAAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-21T03:42:05.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 59,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -881,12 +1047,11 @@
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwA0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T15:13:28.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T15:13:28.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 60,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach_copy\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach_copy\\Details.cshtml",
@@ -894,12 +1059,11 @@
               "RelativeToolTip": "Views\\Sach_copy\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T17:16:25.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T17:16:25.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 61,
               "Title": "GenreBorrowedModel.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Models\\GenreBorrowedModel.cs",
               "RelativeDocumentMoniker": "Models\\GenreBorrowedModel.cs",
@@ -907,12 +1071,11 @@
               "RelativeToolTip": "Models\\GenreBorrowedModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:56:15.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T20:56:15.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 62,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TacGia\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\TacGia\\Create.cshtml",
@@ -920,25 +1083,11 @@
               "RelativeToolTip": "Views\\TacGia\\Create.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAEBVwBQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:01:15.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:01:15.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Index.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Index.cshtml",
-              "RelativeToolTip": "Views\\PhieuMuons\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T09:23:08.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 63,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach_copy\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach_copy\\Edit.cshtml",
@@ -946,12 +1095,11 @@
               "RelativeToolTip": "Views\\Sach_copy\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:06:17.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:06:17.47Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 65,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach_copy\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach_copy\\Delete.cshtml",
@@ -959,12 +1107,11 @@
               "RelativeToolTip": "Views\\Sach_copy\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:07:31.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:07:31.236Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 64,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach_copy\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach_copy\\Create.cshtml",
@@ -972,12 +1119,11 @@
               "RelativeToolTip": "Views\\Sach_copy\\Create.cshtml",
               "ViewState": "AgIAAGAAAAAAAAAAAEBVwHAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:07:47.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:07:47.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 67,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TacGia\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\TacGia\\Edit.cshtml",
@@ -985,12 +1131,11 @@
               "RelativeToolTip": "Views\\TacGia\\Edit.cshtml",
               "ViewState": "AgIAABEAAAAAAAAAAEBVwA8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:02:15.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:02:15.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 69,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TacGia\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\TacGia\\Delete.cshtml",
@@ -998,12 +1143,11 @@
               "RelativeToolTip": "Views\\TacGia\\Delete.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAkwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T12:00:31.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T12:00:31.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 68,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\TacGia\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\TacGia\\Details.cshtml",
@@ -1011,12 +1155,11 @@
               "RelativeToolTip": "Views\\TacGia\\Details.cshtml",
               "ViewState": "AgIAAAQAAAAAAAAAAEBVwA0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T11:59:52.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T11:59:52.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 66,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\Sach\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Sach\\Create.cshtml",
@@ -1024,12 +1167,11 @@
               "RelativeToolTip": "Views\\Sach\\Create.cshtml",
               "ViewState": "AgIAADcAAAAAAAAAAEBVwE0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-20T11:57:45.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T11:57:45.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 70,
               "Title": "TacGia.cs",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\TacGia.cs",
               "RelativeDocumentMoniker": "TacGia.cs",
@@ -1037,12 +1179,11 @@
               "RelativeToolTip": "TacGia.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAIBQwB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T09:00:49.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T09:00:49.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 71,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
@@ -1050,21 +1191,7 @@
               "RelativeToolTip": "Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-14T03:07:53.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\PhieuMuons\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\84989\\Downloads\\Documents\\Cong Nghe Phan Mem\\Code\\Library-management-website\\Library-Mangement-Website\\Views\\PhieuMuons\\Edit.cshtml",
-              "RelativeToolTip": "Views\\PhieuMuons\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-13T15:21:44.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-14T03:07:53.158Z"
             }
           ]
         }

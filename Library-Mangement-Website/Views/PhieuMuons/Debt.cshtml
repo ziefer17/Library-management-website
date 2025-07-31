@@ -54,6 +54,7 @@
                                 <th>Authors</th>
                                 <th>Publisher</th>
                                 <th>Year published</th>
+                                <th>Date Borrowed</th>
                                 <th>Days late</th>
                                 <th>Debt</th>
                             </tr>
@@ -67,6 +68,7 @@
                                     <td>@Html.DisplayFor(modelItem => item.Authors)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Publisher)</td>
                                     <td>@Html.DisplayFor(modelItem => item.YearPublished)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.DayBorrowed) </td>
                                     <td><span class="badge badge-outline">@Html.DisplayFor(modelItem => item.DayOvertime)</span></td>
                                     <td>@Html.DisplayFor(modelItem => item.Debt)</td>
                                 </tr>

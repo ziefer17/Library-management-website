@@ -339,11 +339,13 @@
     <Content Include="Views\Home\ReaderMenu.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Shared\_LayoutHomeLogin.cshtml" />
     <Content Include="Views\PhieuMuons\History.cshtml" />
     <Content Include="Views\PhieuMuons\Debt.cshtml" />
     <Content Include="Views\Home\ChiTiet.cshtml" />
     <Content Include="Views\Home\PdfReader.cshtml" />
+    <Content Include="Views\Account\EditProfile.cshtml" />
+    <Content Include="Views\Account\Profile.cshtml" />
+    <Content Include="Views\Home\LapTheMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

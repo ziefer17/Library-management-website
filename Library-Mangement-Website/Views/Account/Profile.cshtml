@@ -1,0 +1,72 @@
+﻿@model Library_Mangement_Website.Models.ReaderViewModel
+@{
+    ViewBag.Title = "xem thông tin tài khoản";
+    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+}
+<style>
+    table.info-table th,
+    table.info-table td {
+        padding: 12px 16px;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+    table.info-table th {
+        width: 200px;
+        white-space: nowrap;
+        text-align: left;
+    }
+</style>
+
+<h2 class="text-center mb-4"><i class="fas fa-info-circle"></i> Thông tin tài khoản</h2>
+
+<div class="card shadow rounded">
+    <div class="card-body">
+        <table class="table info-table">
+            <tr>
+                <th>👤 Họ tên:</th>
+                <td>@Model.ReaderName</td>
+            </tr>
+            <tr>
+                <th>📧Email:</th>
+                <td>@Model.ReaderEmail</td>
+            </tr>
+            <tr>
+                <th>🎂 Ngày sinh:</th>
+                <td>@Model.DateOfBirth</td>
+            </tr>
+            <tr>
+                <th>📅 Ngày tạo thẻ:</th>
+                <td>@Model.DateCreated</td>
+            </tr>
+            <tr>
+                <th>🔖 Loại độc giả:</th>
+                <td>@Model.ReaderType</td>
+            </tr>
+            <tr>
+                <th><i class="fas fa-toggle-on" style="color: #28a745;"></i> Trạng thái:</th>
+                <td>
+                    @if (Model.Status == "active")
+                    {
+                        <span class="badge bg-success">Đang hoạt động</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Đã khóa</span>
+                    }
+                </td>
+            </tr>
+        </table>
+
+        <div class="text-end mt-3">
+            <a href="@Url.Action("EditProfile", "Account")" class="btn btn-outline-primary">
+                <i class="fas fa-edit"></i> Chỉnh sửa
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+@*<tr><th>Ngày sinh:</th><td>@Model.DateOfBirth</td></tr>
+    <tr><th>Ngày tạo thẻ:</th><td>@Model.DateCreated</td></tr>*@

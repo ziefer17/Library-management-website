@@ -17,10 +17,14 @@ namespace Library_Mangement_Website.Controllers
         private string defaultImage = "https://raw.githubusercontent.com/ziefer17/PDFStorage/main/Images/Default_book_cover.png";
         public ActionResult HomeMain(string keyword, int? page)
         {
+            db.Database.CommandTimeout = 120;
+
             int pageSize = 8;
             int pageNumber = page ?? 1;
 
-            var sachs = db.Saches.Include(s => s.TheLoai).Include(s => s.TacGias);
+            var sachs = db.Saches.Include(s => s.TheLoai).Include(s => s.TacGias)
+                .Include(s => s.Sach_Copy);
+
 
             if (!string.IsNullOrEmpty(keyword))
             {
@@ -31,6 +35,7 @@ namespace Library_Mangement_Website.Controllers
                     s.TacGias.Any(tg => tg.Ten.ToLower().Contains(keyword))
                 );
             }
+            
 
             var pagedSachs = sachs.OrderBy(s => s.TenSach).ToPagedList(pageNumber, pageSize);
 
@@ -57,7 +62,10 @@ namespace Library_Mangement_Website.Controllers
             return Json(result, JsonRequestBehavior.AllowGet);
         }
 
-        
+        public ActionResult LapTheMenu()
+        {
+            return View();
+        }
         public ActionResult ReaderMenu()
         {
             return View();
@@ -91,6 +99,8 @@ namespace Library_Mangement_Website.Controllers
         {
             if (id == null)
                 return HttpNotFound();
+
+            db.Database.CommandTimeout = 120;
 
             var sachCopy = db.Sach_copy
                 .Include(s => s.Sach.TacGias)

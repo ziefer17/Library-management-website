@@ -29,12 +29,13 @@ namespace Library_Mangement_Website.Controllers
             int id = (int)Session["UserId"];
             var currentDate = DateTime.Today;
 
+            db.Database.CommandTimeout = 120;
+
             var phatData = db.Phats
                 .Include(p => p.PhieuMuon.Sach_copy.Sach.TheLoai)
                 .Include(p => p.PhieuMuon.Sach_copy.Sach.TacGias)
                 .Include(p => p.PhieuMuon.Sach_copy)
                 .Include(p => p.PhieuMuon.TheDocGia)
-                .Where(p => p.PhieuMuon.NgayTra == null)
                 .Where(p => p.PhieuMuon.TheDocGia.docgia_id == id)
                 .ToList();
 
@@ -52,10 +53,27 @@ namespace Library_Mangement_Website.Controllers
                 Authors = s.PhieuMuon.Sach_copy.Sach.TacGias.Any() ? string.Join(", ", s.PhieuMuon.Sach_copy.Sach.TacGias.Select(t => t.Ten)) : "No Authors",
                 Publisher = s.PhieuMuon.Sach_copy.NhaXuatBan != null ? s.PhieuMuon.Sach_copy.NhaXuatBan.Ten : "N/A",
                 YearPublished = s.PhieuMuon.Sach_copy.NamXuatBan.HasValue ? s.PhieuMuon.Sach_copy.NamXuatBan.Value.ToString("yyyy") : "N/A",
+
                 DayOvertime = s.PhieuMuon.NgayMuon.HasValue
-                    ? (currentDate - s.PhieuMuon.NgayMuon.Value).Days + 12 + " days"
-                    : "N/A",
-                Debt = (decimal)s.SoTienPhat,
+                    ? (s.PhieuMuon.NgayTra.HasValue
+                        ? ((s.PhieuMuon.NgayTra.Value - s.PhieuMuon.NgayMuon.Value).Days > 12
+                            ? (s.PhieuMuon.NgayTra.Value - s.PhieuMuon.NgayMuon.Value).Days
+                            : 0)
+                        : ((currentDate - s.PhieuMuon.NgayMuon.Value).Days - 12 > 0
+                            ? (currentDate - s.PhieuMuon.NgayMuon.Value).Days - 12
+                            : 0))
+                    : 0,
+
+                Debt = (s.PhieuMuon.NgayMuon.HasValue
+                    ? (s.PhieuMuon.NgayTra.HasValue
+                        ? ((s.PhieuMuon.NgayTra.Value - s.PhieuMuon.NgayMuon.Value).Days > 12
+                            ? (s.PhieuMuon.NgayTra.Value - s.PhieuMuon.NgayMuon.Value).Days * 5000
+                            : 0)
+                        : ((currentDate - s.PhieuMuon.NgayMuon.Value).Days - 12 > 0
+                            ? ((currentDate - s.PhieuMuon.NgayMuon.Value).Days - 12) * 5000
+                            : 0))
+                    : 0),
+
                 DayBorrowed = s.PhieuMuon.NgayMuon.HasValue ? s.PhieuMuon.NgayMuon.Value.ToString("dd/MM/yyyy") : "N/A",
                 DateReturned = s.PhieuMuon.NgayTra.HasValue ? s.PhieuMuon.NgayTra.Value.ToString("dd/MM/yyyy") : "N/A",
             }).ToList();
@@ -64,8 +82,19 @@ namespace Library_Mangement_Website.Controllers
 
             ViewBag.TotalDebt = totalDebt;
             ViewBag.SearchTerm = searchTerm;
-            
 
+            foreach (var phat in phatData)
+            {
+                var viewModel = saches.FirstOrDefault(s => s.SachId == phat.PhieuMuon.Sach_copy.Sach.sach_id &&
+                                                         s.DayBorrowed == (phat.PhieuMuon.NgayMuon.HasValue ? phat.PhieuMuon.NgayMuon.Value.ToString("dd/MM/yyyy") : "N/A"));
+                if (viewModel != null)
+                {
+                    phat.SoNgayTre = viewModel.DayOvertime;
+                    phat.SoTienPhat = viewModel.Debt;
+                }
+            }
+
+            db.SaveChanges();
             return View(saches);
         }
 
@@ -73,6 +102,7 @@ namespace Library_Mangement_Website.Controllers
         {
             var currentDate = DateTime.Today;
 
+            db.Database.CommandTimeout = 120;
 
             var sachesData = db.PhieuMuons
                 .Include(s => s.Sach_copy.Sach.TheLoai)
@@ -100,8 +130,14 @@ namespace Library_Mangement_Website.Controllers
                 TenDocGia = s.TheDocGia != null ? s.TheDocGia.Ten : "N/A",
                 EmailDocGia = s.TheDocGia != null ? s.TheDocGia.Email : "N/A",
                 DayOvertime = s.NgayMuon.HasValue
-                    ? (currentDate - s.NgayMuon.Value).Days + 12 + " days"
-                    : "N/A"
+                    ? (s.NgayTra.HasValue
+                        ? ((s.NgayTra.Value - s.NgayMuon.Value).Days > 12
+                            ? (s.NgayTra.Value - s.NgayMuon.Value).Days
+                            : 0)
+                        : ((currentDate - s.NgayMuon.Value).Days - 12 > 0
+                            ? (currentDate - s.NgayMuon.Value).Days - 12
+                            : 0))
+                    : 0,
             }).ToList();
 
             ViewBag.SearchTerm = searchTerm;
@@ -138,8 +174,14 @@ namespace Library_Mangement_Website.Controllers
                 TenDocGia = s.TheDocGia != null ? s.TheDocGia.Ten : "N/A",
                 EmailDocGia = s.TheDocGia != null ? s.TheDocGia.Email : "N/A",
                 DayOvertime = s.NgayMuon.HasValue
-                    ? (currentDate - s.NgayMuon.Value).Days + 12 + " days"
-                    : "N/A"
+                    ? (s.NgayTra.HasValue
+                        ? ((s.NgayTra.Value - s.NgayMuon.Value).Days > 12
+                            ? (s.NgayTra.Value - s.NgayMuon.Value).Days
+                            : 0)
+                        : ((currentDate - s.NgayMuon.Value).Days - 12 > 0
+                            ? (currentDate - s.NgayMuon.Value).Days - 12
+                            : 0))
+                    : 0,
             }).ToList();
 
             ExcelPackage.License.SetNonCommercialPersonal("My Name");
@@ -226,78 +268,157 @@ namespace Library_Mangement_Website.Controllers
             ViewBag.CurrentDate = currentDate;
             return View(saches);
         }
-        // GET: PhieuMuons
         public async Task<ActionResult> Index()
         {
-            var phieuMuons = db.PhieuMuons.Include(p => p.Sach_copy).Include(p => p.TheDocGia);
-            return View(await phieuMuons.ToListAsync());
+            db.Database.CommandTimeout = 120;
+            var phieus = db.PhieuMuons
+                .Include(p => p.TheDocGia)
+                .Include(p => p.Sach_copy.Sach)
+                .Include(p => p.Sach_copy.NhaXuatBan);
+
+            return View(await phieus.ToListAsync());
         }
 
         // GET: PhieuMuons/Details/5
         public async Task<ActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            PhieuMuon phieuMuon = await db.PhieuMuons.FindAsync(id);
-            if (phieuMuon == null)
-            {
-                return HttpNotFound();
-            }
-            return View(phieuMuon);
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            PhieuMuon phieu = await db.PhieuMuons
+                .Include(p => p.TheDocGia)
+                .Include(p => p.Sach_copy)
+                .FirstOrDefaultAsync(p => p.pm_id == id);
+
+            if (phieu == null) return HttpNotFound();
+
+            return View(phieu);
         }
 
         // GET: PhieuMuons/Create
         public ActionResult Create()
         {
-            ViewBag.copy_id = new SelectList(db.Sach_copy, "copy_id", "pdf_link");
-            ViewBag.docgia_id = new SelectList(db.TheDocGias, "docgia_id", "Ten");
             return View();
         }
 
         // POST: PhieuMuons/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "pm_id,NgayMuon,NgayTra,docgia_id,copy_id")] PhieuMuon phieuMuon)
+        public async Task<ActionResult> Create(int docgia_id, int? copy_id)
         {
-            if (ModelState.IsValid)
+
+            if (!copy_id.HasValue)
             {
-                db.PhieuMuons.Add(phieuMuon);
-                await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                var msg = "Bạn chưa chọn bản sao sách.";
+                ModelState.AddModelError("copy_id", msg);
+                ViewBag.Error = msg;
+                return View();
             }
 
-            ViewBag.copy_id = new SelectList(db.Sach_copy, "copy_id", "pdf_link", phieuMuon.copy_id);
-            ViewBag.docgia_id = new SelectList(db.TheDocGias, "docgia_id", "Ten", phieuMuon.docgia_id);
-            return View(phieuMuon);
+            var docGia = await db.TheDocGias.Include(d => d.PhieuMuons).FirstOrDefaultAsync(d => d.docgia_id == docgia_id);
+            if (docGia == null)
+            {
+                var msg = "Độc giả không tồn tại.";
+                ModelState.AddModelError("docgia_id", msg);
+                ViewBag.Error = msg;
+                return View();
+            }
+
+            int maxPhieu = docGia.LoaiDG == "B" ? 3 : (docGia.LoaiDG == "V" ? 5 : 0);
+            if (docGia.PhieuMuons.Count >= maxPhieu)
+            {
+                var msg = $"Độc giả loại {docGia.LoaiDG} chỉ được mượn tối đa {maxPhieu} sách.";
+                ModelState.AddModelError("", msg);
+                ViewBag.Error = msg;
+                return View();
+            }
+
+            var sachCopy = await db.Sach_copy.FindAsync(copy_id);
+            if (sachCopy == null)
+            {
+                var msg = "Bản sao sách không tồn tại.";
+                ModelState.AddModelError("copy_id", msg);
+                ViewBag.Error = msg;
+                return View();
+            }
+
+            int newID = db.PhieuMuons.Any() ? db.PhieuMuons.Max(p => p.pm_id) + 1 : 1;
+
+            var phieu = new PhieuMuon
+            {
+                pm_id = newID,
+                docgia_id = docgia_id,
+                copy_id = copy_id.Value,
+                NgayMuon = DateTime.Now
+            };
+
+            db.PhieuMuons.Add(phieu);
+            await db.SaveChangesAsync();
+
+            TempData["docgia_id"] = docgia_id;
+            TempData["docgia_name"] = docGia?.Ten ?? "";
+            TempData["Continue"] = false;
+            TempData["Success"] = "Lập phiếu mượn thành công!";
+
+            return RedirectToAction("Create");
+
+        }
+
+        // AJAX: Gợi ý tên sách
+        [HttpGet]
+        public JsonResult Suggest(string term)
+        {
+            var result = db.Saches
+                .Where(s => s.TenSach.Contains(term))
+                .Take(10)
+                .Select(s => new
+                {
+                    label = s.TenSach,
+                    id = s.sach_id
+                }).ToList();
+
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        // AJAX: Gợi ý bản sao sách theo tên sách + NXB + năm xuất bản
+        [HttpGet]
+        public JsonResult FindCopy(int sach_id, string nxb, int? nam)
+        {
+            var query = db.Sach_copy
+                .Where(c =>
+                    c.sach_id == sach_id &&
+                    c.NhaXuatBan.Ten.Contains(nxb)
+                );
+
+            if (nam.HasValue)
+            {
+                query = query.Where(c => c.NamXuatBan.HasValue && c.NamXuatBan.Value.Year == nam.Value);
+            }
+
+            var copy = query.FirstOrDefault();
+
+            if (copy == null)
+                return Json(new { found = false }, JsonRequestBehavior.AllowGet);
+
+            return Json(new { found = true, copy_id = copy.copy_id }, JsonRequestBehavior.AllowGet);
         }
 
         // GET: PhieuMuons/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            PhieuMuon phieuMuon = await db.PhieuMuons.FindAsync(id);
-            if (phieuMuon == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.copy_id = new SelectList(db.Sach_copy, "copy_id", "pdf_link", phieuMuon.copy_id);
-            ViewBag.docgia_id = new SelectList(db.TheDocGias, "docgia_id", "Ten", phieuMuon.docgia_id);
-            return View(phieuMuon);
+            if (id == null) return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+
+            PhieuMuon phieu = await db.PhieuMuons.FindAsync(id);
+            if (phieu == null) return HttpNotFound();
+
+            ViewBag.docgia_id = new SelectList(db.TheDocGias, "docgia_id", "Ten", phieu.docgia_id);
+            ViewBag.copy_id = new SelectList(db.Sach_copy, "copy_id", "copy_id", phieu.copy_id);
+            return View(phieu);
         }
 
         // POST: PhieuMuons/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "pm_id,NgayMuon,NgayTra,docgia_id,copy_id")] PhieuMuon phieuMuon)
+        public async Task<ActionResult> Edit([Bind(Include = "phieumuon_id,docgia_id,copy_id,NgayMuon")] PhieuMuon phieuMuon)
         {
             if (ModelState.IsValid)
             {
@@ -305,8 +426,9 @@ namespace Library_Mangement_Website.Controllers
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.copy_id = new SelectList(db.Sach_copy, "copy_id", "pdf_link", phieuMuon.copy_id);
+
             ViewBag.docgia_id = new SelectList(db.TheDocGias, "docgia_id", "Ten", phieuMuon.docgia_id);
+            ViewBag.copy_id = new SelectList(db.Sach_copy, "copy_id", "copy_id", phieuMuon.copy_id);
             return View(phieuMuon);
         }
 
@@ -314,15 +436,13 @@ namespace Library_Mangement_Website.Controllers
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
-            {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            PhieuMuon phieuMuon = await db.PhieuMuons.FindAsync(id);
-            if (phieuMuon == null)
-            {
+
+            var phieu = await db.PhieuMuons.FindAsync(id);
+            if (phieu == null)
                 return HttpNotFound();
-            }
-            return View(phieuMuon);
+
+            return View(phieu);
         }
 
         // POST: PhieuMuons/Delete/5
@@ -330,11 +450,12 @@ namespace Library_Mangement_Website.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            PhieuMuon phieuMuon = await db.PhieuMuons.FindAsync(id);
-            db.PhieuMuons.Remove(phieuMuon);
+            var phieu = await db.PhieuMuons.FindAsync(id);
+            db.PhieuMuons.Remove(phieu);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
 
         protected override void Dispose(bool disposing)
         {

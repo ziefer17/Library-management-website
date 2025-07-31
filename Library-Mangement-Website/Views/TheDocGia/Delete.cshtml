@@ -1,81 +1,33 @@
 ﻿@model Library_Mangement_Website.TheDocGia
 
 @{
-    ViewBag.Title = "Delete";
-    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+    ViewBag.Title = "Xoá thẻ đọc giả";
 }
 
-<h2>Delete</h2>
+<h2>Xác nhận xoá</h2>
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>TheDocGia</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Ten)
-        </dt>
+<h4>Bạn có chắc chắn muốn xoá thẻ đọc giả sau?</h4>
+<hr />
+<dl class="dl-horizontal">
+    <dt>Họ tên</dt>
+    <dd>@Model.Ten</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Ten)
-        </dd>
+    <dt>Email</dt>
+    <dd>@Model.Email</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.NgayLapThe)
-        </dt>
+    <dt>Ngày sinh</dt>
+    <dd>@Model.NgaySinh.ToString("dd/MM/yyyy")</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.NgayLapThe)
-        </dd>
+    <dt>Loại</dt>
+    <dd>@Model.LoaiDG</dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.NgaySinh)
-        </dt>
+    <dt>Trạng thái</dt>
+    <dd>@Model.Status</dd>
+</dl>
 
-        <dd>
-            @Html.DisplayFor(model => model.NgaySinh)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.LoaiDG)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LoaiDG)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
-    }
-</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Xoá</button>
+    @Html.ActionLink("Huỷ", "Index", null, new { @class = "btn btn-secondary" })
+}

@@ -1,50 +1,38 @@
 ﻿@model Library_Mangement_Website.PhieuMuon
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Chi tiết phiếu mượn";
 }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<h2>Details</h2>
+<h2 class="text-primary mb-4">Chi tiết phiếu mượn</h2>
 
-<div>
-    <h4>PhieuMuon</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.NgayMuon)
-        </dt>
+<div class="card shadow p-4">
+    <dl class="row">
+        <dt class="col-sm-3">Mã phiếu mượn</dt>
+        <dd class="col-sm-9">@Model.pm_id</dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.NgayMuon)
+        <dt class="col-sm-3">Mã độc giả</dt>
+        <dd class="col-sm-9">@Model.docgia_id</dd>
+
+        <dt class="col-sm-3">Tên độc giả</dt>
+        <dd class="col-sm-9">@Model.TheDocGia.Ten</dd>
+
+        <dt class="col-sm-3">Mã bản sao sách</dt>
+        <dd class="col-sm-9">@Model.copy_id</dd>
+
+        <dt class="col-sm-3">Tên sách</dt>
+        <dd class="col-sm-9">@Model.Sach_copy.Sach.TenSach</dd>
+
+        <dt class="col-sm-3">Ngày mượn</dt>
+        <dd class="col-sm-9">
+            @(Model.NgayMuon?.ToString("dd/MM/yyyy") ?? "Không xác định")
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NgayTra)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NgayTra)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Sach_copy.pdf_link)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Sach_copy.pdf_link)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TheDocGia.Ten)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TheDocGia.Ten)
-        </dd>
-
     </dl>
+
+    <div class="mt-4">
+        <a href="@Url.Action("Edit", new { id = Model.pm_id })" class="btn btn-warning">Sửa</a>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Quay lại</a>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.pm_id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+

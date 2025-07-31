@@ -1,0 +1,89 @@
+﻿@model Library_Mangement_Website.Models.ReaderViewModel
+@{
+    ViewBag.Title = "Chỉnh sửa thông tin tài khoản";
+    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+}
+
+<style>
+    .form-section {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fdfdfd;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+        .form-section h2 {
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-align: center;
+            color: #211951;
+        }
+
+    .form-group label {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 10px 14px;
+    }
+
+    .btn-success {
+        background-color: #819A91;
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #D1D8BE;
+        border: none;
+        color: #000;
+    }
+
+    .btn + .btn {
+        margin-left: 10px;
+    }
+</style>
+
+<div class="form-section">
+    <h2>🔧 Chỉnh sửa tài khoản</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(m => m.ReaderId)
+
+        <div class="form-group mb-3">
+            @Html.LabelFor(m => m.ReaderName, "👤 Họ tên")
+            @Html.TextBoxFor(m => m.ReaderName, new { @class = "form-control", placeholder = @Session["UserName"]})
+        </div>
+
+        <div class="form-group mb-3">
+            @Html.LabelFor(m => m.ReaderEmail, "📧 Email")
+            @Html.TextBoxFor(m => m.ReaderEmail, new { @class = "form-control", placeholder = "Nhập email" })
+        </div>
+
+        <div class="form-group mb-3">
+            @Html.LabelFor(m => m.Password, "🔒 Mật khẩu")
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Nhập mật khẩu mới" })
+        </div>
+
+        <div class="form-group mb-3">
+            @Html.LabelFor(m => m.ConfirmPassword, "🔁 Xác nhận mật khẩu")
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Nhập lại mật khẩu" })
+            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-success">
+                💾 Lưu
+            </button>
+            <a href="@Url.Action("Profile", "Account")" class="btn btn-secondary">
+                ❌ Hủy
+            </a>
+        </div>
+    }
+</div>
+

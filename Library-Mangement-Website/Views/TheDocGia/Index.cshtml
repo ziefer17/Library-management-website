@@ -1,70 +1,44 @@
 ﻿@model IEnumerable<Library_Mangement_Website.TheDocGia>
 
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+    ViewBag.Title = "Danh sách thẻ độc giả";
 }
 
-<h2>Index</h2>
+<h2 class="text-primary">Danh sách thẻ độc giả</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action("Create", "TheDocGia")" class="btn btn-success">+ Tạo mới thẻ</a>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Ten)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayLapThe)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NgaySinh)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LoaiDG)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ten)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayLapThe)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgaySinh)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LoaiDG)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.docgia_id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.docgia_id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.docgia_id })
-        </td>
-    </tr>
-}
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Ngày sinh</th>
+            <th>Ngày lập thẻ</th>
+            <th>Loại</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var docgia in Model)
+        {
+            <tr>
+                <td>@docgia.Ten</td>
+                <td>@docgia.Email</td>
+                <td>@docgia.NgaySinh.ToString("dd/MM/yyyy")</td>
+                <td>@docgia.NgayLapThe.ToString("dd/MM/yyyy")</td>
+                <td>@docgia.LoaiDG</td>
+                <td>@docgia.Status</td>
+                <td>
+                    <a href="@Url.Action("Edit", "TheDocGia", new { id = docgia.docgia_id })" class="btn btn-warning btn-sm">Sửa</a>
+                    <a href="@Url.Action("Delete", "TheDocGia", new { id = docgia.docgia_id })" class="btn btn-danger btn-sm">Xoá</a>
 
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
+

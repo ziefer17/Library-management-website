@@ -1,52 +1,49 @@
 ﻿@model IEnumerable<Library_Mangement_Website.PhieuMuon>
 
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_LayoutHomeMain.cshtml";
+    ViewBag.Title = "Danh sách phiếu mượn";
 }
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 
-<h2>Index</h2>
+<h2 class="text-primary mb-4">Danh sách phiếu mượn</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a href="@Url.Action("Create")" class="btn btn-success mb-3">+ Lập phiếu mới</a>
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayMuon)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NgayTra)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sach_copy.pdf_link)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TheDocGia.Ten)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayMuon)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NgayTra)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sach_copy.pdf_link)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TheDocGia.Ten)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.pm_id }) |
-            @Html.ActionLink("Details", "Details", new { id = item.pm_id }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.pm_id })
-        </td>
-    </tr>
-}
-
+<table class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+        <tr class="table-primary">
+            <th>Độc giả</th>
+            <th>Tên sách</th>
+            <th>Nhà xuất bản</th>
+            <th>Năm XB</th>
+            <th>Ngày mượn</th>
+            <th>Hạn trả</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            DateTime hanTra = DateTime.MinValue;
+            if (item.NgayMuon.HasValue)
+            {
+                hanTra = item.NgayMuon.Value.AddDays(12);
+            }
+            <tr>
+                <td>@item.TheDocGia.Ten</td>
+                <td>@item.Sach_copy.Sach.TenSach</td>
+                <td>@item.Sach_copy.NhaXuatBan.Ten</td>
+                <td>@(item.Sach_copy.NamXuatBan?.Year.ToString() ?? "")</td>
+                <td>@(item.NgayMuon.HasValue ? item.NgayMuon.Value.ToString("dd/MM/yyyy") : "")</td>
+                <td>@hanTra.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a href="@Url.Action("Details", new { id = item.pm_id })" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a href="@Url.Action("Edit", new { id = item.pm_id })" class="btn btn-warning btn-sm">Sửa</a>
+                    <a href="@Url.Action("Delete", new { id = item.pm_id })" class="btn btn-danger btn-sm">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
